@@ -49,3 +49,10 @@ MULTI-VID-002,Dicta-Sign,Multilingual,Multiple,Video,4000+,Research Use,EU Dicta
 MULTI-DB-001,SpreadTheSign,Multilingual,30+ languages,Dictionary,500000+ signs,N/A,Personal use,https://www.spreadthesign.com/,eslc2024spreadthesign,Global sign dictionary
 MULTI-DB-002,OpenSLR,Multilingual,Various,Repository,Varies,N/A,Varies,https://www.openslr.org/,openslr,Speech & language resources
 MULTI-DB-003,SLP Toolkit,Multilingual,Multiple,Preprocessed,Varies,N/A,Varies,https://www.sign-language-processing.com/,slp2024,ML-ready SL datasets
+ASL-VID-010,YouTube-ASL,American Sign Language,ASL,Video,11093 videos 984 hours,0,Research Use,https://github.com/google-research/google-research/tree/master/youtube_asl,uthus2023youtubeasl,984 hours of open-domain ASL-English parallel corpus
+ASL-IMG-003,Sign Language 26,American Sign Language,ASL,Image,18200 15 classes,0,Community,https://huggingface.co/datasets/Gsco-HF/sign-language-26,gscohf2024sign26,ASL sign images at 1280x1280
+MULT-3D-001,SignAvatars,Multilingual,Multi,3D Motion,8.34M annotations 70K sequences,0,Research Use,https://github.com/ZhengdiYu/SignAvatars,yu2024signavatars,First large-scale 3D sign language holistic motion dataset
+NSL-VID-001,Nigerian Sign Language Corpus,Nigerian Sign Language,NSL,Video,5250+,0,Research Use,https://huggingface.co/datasets/Lanfrica/sign-to-speech-for-sign-language-understanding-a-case-study-of-nigerian-sign-language,lanfrica2024nsl,Sign-to-speech corpus for Nigerian SL
+PSL-SEN-001,Pakistani Sign Language Gesture Dataset,Pakistani Sign Language,PSL,Sensor,MediaPipe landmarks,0,CC BY 4.0,https://huggingface.co/datasets/Bakhtyar12/Pakistani-Sign-Language,bakhtyar2024psl,MediaPipe-based PSL gesture recognition
+GSL-VID-001,Ghanaian Sign Language Lexicon,Ghanaian Sign Language,GSL,Video,Lexicon,0,Community,https://huggingface.co/datasets/jameszokah/ghanaian-sign-language-lexicon,jameszokah2025ghsl,Ghanaian SL lexicon with landmarks
+MSL-IMG-001,Marathi Sign Language Dataset,Marathi Sign Language,MSL,Image,50100+ 43 classes,0,Community,https://huggingface.co/datasets/VinayHajare/Marathi-Sign-Language,vinayhajare2025msl,Marathi sign alphabet detection at 128x128

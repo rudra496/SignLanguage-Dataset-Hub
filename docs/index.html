@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Language Dataset Hub</title>
+  <meta name="description" content="A comprehensive catalog of 67+ verified sign language datasets from around the world.">
+  <link rel="stylesheet" href="_site/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤟</text></svg>">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span>🤟</span> SL Dataset Hub
+      </a>
+      <ul class="nav-links">
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="https://github.com/rudra496/SignLanguage-Dataset-Hub" target="_blank">GitHub ⭐</a></li>
+        <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1><span class="emoji">🌍</span> Sign Language Dataset Hub</h1>
+      <p>A comprehensive, verified catalog of sign language datasets from around the world. Find the right dataset for your research, education, or application development.</p>
+      <div class="stats-row">
+        <div class="stat-badge"><span class="num">67+</span> Datasets</div>
+        <div class="stat-badge"><span class="num">22+</span> Sign Languages</div>
+        <div class="stat-badge"><span class="num">5</span> Modalities</div>
+        <div class="stat-badge"><span class="num">✓</span> All Verified</div>
+      </div>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn btn-primary">📊 Browse Datasets</a>
+        <a href="https://github.com/rudra496/SignLanguage-Dataset-Hub" target="_blank" class="btn btn-secondary">GitHub Repository</a>
+        <a href="CONTRIBUTING.html" class="btn btn-secondary">🤝 Contribute</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Verified URLs</h3>
+          <p>Every dataset link has been checked to ensure it resolves correctly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>22+ Languages</h3>
+          <p>Covering ASL, BSL, DGS, Libras, JSL, CSL, and many more sign languages.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Multiple Modalities</h3>
+          <p>Video, image, sensor data, linguistic databases, and dictionaries.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h3>Full Citations</h3>
+          <p>Every entry includes proper citations, license info, and sample counts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dataset Catalog -->
+  <section class="section" id="catalog">
+    <div class="container">
+      <h2 class="section-title">📊 Dataset Catalog</h2>
+
+      <!-- Filters -->
+      <div class="filters-section">
+        <div class="filters-bar">
+          <div class="search-box">
+            <span class="icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Search datasets by name, language, modality..." autocomplete="off">
+          </div>
+          <select id="modality-filter" class="filter-select">
+            <option value="All">All Modalities</option>
+          </select>
+        </div>
+        <div id="lang-tabs" class="lang-tabs"></div>
+        <p id="results-count" class="results-count"></p>
+      </div>
+
+      <!-- Grid -->
+      <div id="dataset-grid" class="dataset-grid"></div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section class="section" id="languages">
+    <div class="container">
+      <h2 class="section-title">🌎 Supported Sign Languages</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Our catalog covers sign languages from every continent, including several low-resource languages that are underrepresented in research.</p>
+
+      <div class="accordion-item">
+        <div class="accordion-header">🇺🇸 American Sign Language (ASL) — 12 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>MS-ASL, WLASL, How2Sign, OpenASL, YouTube-ASL, ASLLVD, ASL-MNIST, ASL Alphabet, ASL-LEX, ASL Citizen, AUTSL, ChaLearn LAP</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇸🇦 Arabic Sign Language (ArSL) — 2 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>ArSL2018, KArSL-502</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇦🇺 Australian Sign Language (Auslan) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>Auslan Signbank</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇧🇩 Bangla Sign Language (BdSL) — 4 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>BdSL47, KU-BdSL, Ban-Sign-Sent-9K, BdSL-Sensor-Glove</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇧🇷 Brazilian Sign Language (Libras) — 2 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>Libras-UFPR, PHOENIX-Libras</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇬🇧 British Sign Language (BSL) — 3 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>BOBSL, BSL Corpus, BSL SignBank</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇨🇳 Chinese Sign Language (CSL) — 2 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>DEVISIGN, USTC-CSL</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇳🇱 Dutch Sign Language (NGT) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>CNGT Corpus</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇫🇷 French Sign Language (LSF) — 2 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>Dicta-Sign LSF, LSF-Dict</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇩🇪 German Sign Language (DGS) — 3 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>RWTH-PHOENIX-Weather 2014, RWTH-PHOENIX-Weather 2014T, DGS Corpus</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇬🇷 Greek Sign Language (GSL) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>GSL-50</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇮🇳 Indian Sign Language (ISL) — 3 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>INCLUDE, ISL-CSLTR, ISL-Alphabet</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇯🇵 Japanese Sign Language (JSL) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>J-ASL</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇰🇷 Korean Sign Language (KSL) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>KETI Sign Language Dataset</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇲🇾 Malaysian Sign Language (BIM) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>MSL Dataset</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇲🇽 Mexican Sign Language (LSM) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>LSM Dataset</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇷🇺 Russian Sign Language (RSL) — 2 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>RuSLAN Collection, RSL-Signs</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇸🇪 Swedish Sign Language (SSL) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>SSL Corpus</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇹🇭 Thai Sign Language (TSL) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>TSL-51</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🇹🇷 Turkish Sign Language (TİD) — 1 dataset <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>AUTSL</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🌍 Multilingual & New Languages — 9 datasets <span class="arrow">▼</span></div>
+        <div class="accordion-body"><div class="accordion-content"><p>SIGN-Hub, Dicta-Sign, SpreadTheSign, OpenSLR, SLP Toolkit, SignAvatars, Pakistani Sign Language, Marathi Sign Language, Nigerian Sign Language, Ghanaian Sign Language</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>🌍 <strong>Sign Language Dataset Hub</strong> — A community-maintained catalog of sign language datasets.</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://github.com/rudra496/SignLanguage-Dataset-Hub" target="_blank">GitHub</a> ·
+        <a href="https://github.com/rudra496/SignLanguage-Dataset-Hub/issues" target="_blank">Report Issue</a> ·
+        <a href="CONTRIBUTING.html">Contributing Guide</a>
+      </p>
+      <p style="margin-top: 0.75rem; font-size: 0.8rem;">All data belongs to their respective creators. Every entry has been verified to the best of our ability.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="_site/js/main.js"></script>
+</body>
+</html>

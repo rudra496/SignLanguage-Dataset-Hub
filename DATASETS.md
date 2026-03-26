@@ -2,7 +2,7 @@
 
 This document catalogs verified sign language datasets from around the world. Every dataset listed has been checked to ensure the source URL resolves correctly. Sample counts are from the original publications.
 
-**Last Updated:** March 2026 | **Verified Datasets:** 67 | **Sign Languages:** 22
+**Last Updated:** March 2026 | **Verified Datasets:** 73 | **Sign Languages:** 26
 
 > ⚠️ **Accuracy matters.** If you find a broken link or incorrect information, please [open an issue](https://github.com/rudra496/SignLanguage-Dataset-Hub/issues).
 
@@ -482,6 +482,14 @@ This document catalogs verified sign language datasets from around the world. Ev
 - **Source:** https://www.sign-language-processing.com/ (reference hub)
 - **Citation:** Refer to the sign-language-processing project documentation.
 
+### SignAvatars
+- **Languages:** Multiple (ASL + others via HamNoSys)
+- **Modality:** 3D Motion (SMPL-X mesh annotations)
+- **Samples:** 8.34M precise 3D whole-body annotations, 70K motion sequences
+- **License:** Research Use
+- **Source:** https://github.com/ZhengdiYu/SignAvatars
+- **Citation:** Yu, Z. et al. "SignAvatars: A Large-scale 3D Sign Language Holistic Motion Dataset and Benchmark." ECCV 2024.
+
 ---
 
 ## Linguistic Databases & Dictionaries
@@ -516,11 +524,71 @@ This document catalogs verified sign language datasets from around the world. Ev
 - **Source:** https://aslcitizen.org/
 - **Citation:** De Meulder, B. et al. LREC 2022.
 
-### DGS Corpus Annotation
+### YouTube-ASL
+- **Modality:** Video
+- **Samples:** 11,093 videos, 984 hours of footage, 610,193 English captions
+- **License:** Research Use
+- **Source:** https://github.com/google-research/google-research/tree/master/youtube_asl
+- **Citation:** Uthus, D. et al. "YouTube-ASL: A Large-Scale, Open-Domain American Sign Language-English Parallel Corpus." 2023.
+
+### Sign Language 26
+- **Modality:** Image (1280×1280 RGB)
+- **Samples:** 18,200 images, 15 sign classes
+- **License:** Community
+- **Source:** https://huggingface.co/datasets/Gsco-HF/sign-language-26
+- **Citation:** Gsco-HF. Hugging Face.
+
+---
+
+## DGS Corpus Annotation
 - **Language:** DGS
 - **Content:** Large-scale annotated German Sign Language corpus
 - **Source:** https://www.sign-lang.uni-hamburg.de/dgs-korpus/
 - **Citation:** König, S. et al. Hamburg University.
+
+---
+
+## Nigerian Sign Language (NSL)
+
+### Nigerian Sign Language Corpus
+- **Modality:** Video
+- **Samples:** 5,250+ samples
+- **License:** Research Use
+- **Source:** https://huggingface.co/datasets/Lanfrica/sign-to-speech-for-sign-language-understanding-a-case-study-of-nigerian-sign-language
+- **Citation:** Lanfrica. Hugging Face.
+
+---
+
+## Pakistani Sign Language (PSL)
+
+### Pakistani Sign Language (PSL) Gesture Dataset
+- **Modality:** Sensor (MediaPipe landmarks)
+- **Samples:** Landmark-based gestures covering alphabets, words, and sentences (225 features per frame, 30 frames per sample)
+- **License:** CC BY 4.0
+- **Source:** https://huggingface.co/datasets/Bakhtyar12/Pakistani-Sign-Language
+- **Citation:** Bakhtyar12. Hugging Face.
+
+---
+
+## Ghanaian Sign Language (GSL)
+
+### Ghanaian Sign Language Lexicon
+- **Modality:** Video (with landmark annotations)
+- **Samples:** Lexicon dataset
+- **License:** Community
+- **Source:** https://huggingface.co/datasets/jameszokah/ghanaian-sign-language-lexicon
+- **Citation:** jameszokah. Hugging Face.
+
+---
+
+## Marathi Sign Language (MSL)
+
+### Marathi Sign Language Dataset
+- **Modality:** Image (128×128 RGB)
+- **Samples:** 50,100+ images, 43 classes
+- **License:** Community
+- **Source:** https://huggingface.co/datasets/VinayHajare/Marathi-Sign-Language
+- **Citation:** VinayHajare. Hugging Face.
 
 ---
 

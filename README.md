@@ -95,6 +95,13 @@ See **[DATASETS.md](DATASETS.md)** for the complete verified catalog with:
 
 ---
 
+## 📖 Literature & Benchmarks
+
+- **[REFERENCES.md](REFERENCES.md)** — Key papers on sign language recognition, translation, datasets, and pose estimation
+- **[docs/BENCHMARKS.md](docs/BENCHMARKS.md)** — Published accuracy numbers from real papers (WER, BLEU, accuracy)
+
+---
+
 ## 🚀 Quick Start
 
 ### Clone & Setup
@@ -183,6 +190,7 @@ SignLanguage-Dataset-Hub/
 │   └── bdsl/
 │       └── BdSL-Sensor-Glove/  # Demo sensor dataset (4,824 samples)
 ├── docs/
+│   ├── BENCHMARKS.md           # Published accuracy numbers & comparisons
 │   ├── LICENSE_ATTRIBUTION.md  # Per-dataset license & citation info
 │   ├── TUTORIALS.md            # 9 tutorials (beginner to advanced)
 │   ├── QUICKSTART.md           # Quick start guide
