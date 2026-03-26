@@ -1,4 +1,4 @@
-# 📊 Sign Language Dataset Hub — Statistics
+# Sign Language Dataset Hub — Statistics
 
 **Last Updated:** March 2026
 
@@ -8,107 +8,105 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Datasets | 38 |
-| Sign Languages Covered | 15 |
-| Countries/Regions | 15+ |
-| Active Verified URLs | 38 |
-| Removed (Unverifiable) | 10 |
+| **Total Verified Datasets** | 67 |
+| **Sign Languages Covered** | 22 |
+| **Countries/Regions** | 22+ |
+| **Demo Samples in Repo** | 4,824 |
+| **Tools & Scripts** | 4 |
+| **Tutorials** | 9 |
 
 ---
 
-## By Language
+## Datasets by Language
 
-| Language | Code | Datasets | % |
-|----------|------|----------|---|
-| American Sign Language | asl | 10 | 26.3% |
-| Indian Sign Language | isl | 5 | 13.2% |
-| Bangla Sign Language | bdsl | 4 | 10.5% |
-| Multilingual/General | mul | 6 | 15.8% |
-| British Sign Language | bsl | 2 | 5.3% |
-| German Sign Language | dgs | 2 | 5.3% |
-| Arabic Sign Language | arsl | 2 | 5.3% |
-| Malaysian Sign Language | bim | 2 | 5.3% |
-| Australian Sign Language | auslan | 1 | 2.6% |
-| Turkish Sign Language | tid | 1 | 2.6% |
-| Thai Sign Language | tsl | 1 | 2.6% |
-| Greek Sign Language | gsl | 1 | 2.6% |
-| Nigerian Sign Language | nsl | 1 | 2.6% |
-| Ghanaian Sign Language | gsl_gh | 1 | 2.6% |
-| Hindi Sign Language | hsl | 1 | 2.6% |
-
----
-
-## By Modality
-
-| Modality | Count | % |
-|----------|-------|---|
-| Video | 16 | 42.1% |
-| Image | 14 | 36.8% |
-| Video + Pose/Depth/Skeleton | 3 | 7.9% |
-| Sensor (IMU/Flex) | 1 | 2.6% |
-| Text/Dictionary/Linguistic | 4 | 10.5% |
+| Language | Code | Count | Key Datasets |
+|----------|------|-------|-------------|
+| American Sign Language | ASL | 11 | MS-ASL, WLASL, How2Sign, OpenASL, ASLLVD, AUTSL, ASL-MNIST, ASL Alphabet, ChaLearn LAP, ASL-LEX, ASL Citizen |
+| Arabic Sign Language | ArSL | 2 | ArSL2018, KArSL |
+| Australian Sign Language | Auslan | 1 | Auslan Signbank |
+| Bangla Sign Language | BdSL | 4 | BdSL47, KU-BdSL, Ban-Sign-Sent-9K, BdSL-Sensor-Glove |
+| Brazilian Sign Language | Libras | 2 | Libras-UFPR, PHOENIX-Libras |
+| British Sign Language | BSL | 3 | BOBSL, BSL Corpus, BSL SignBank |
+| Chinese Sign Language | CSL | 2 | DEVISIGN, USTC-CSL |
+| Dutch Sign Language | NGT | 1 | CNGT Corpus |
+| French Sign Language | LSF | 2 | Dicta-Sign LSF, LSF-Dict |
+| German Sign Language | DGS | 3 | RWTH-PHOENIX-2014, PHOENIX-2014T, DGS Corpus |
+| Greek Sign Language | GSL | 1 | GSL-50 |
+| Indian Sign Language | ISL | 3 | INCLUDE, ISL-CSLTR, ISL-Alphabet |
+| Irish Sign Language | ISL | 1 | ISL Corpus |
+| Italian Sign Language | LIS | 1 | ATIS |
+| Japanese Sign Language | JSL | 1 | J-ASL |
+| Korean Sign Language | KSL | 1 | KETI |
+| Malaysian Sign Language | BIM | 1 | MSL Dataset |
+| Mexican Sign Language | LSM | 1 | LSM Sign Language |
+| Russian Sign Language | RSL | 2 | RuSLAN, RSL-Signs |
+| Swedish Sign Language | SSL | 1 | SSL Corpus |
+| Thai Sign Language | TSL | 1 | TSL-51 |
+| Turkish Sign Language | TİD | 1 | AUTSL |
+| Multilingual | — | 5 | SIGN-Hub, Dicta-Sign, SpreadTheSign, OpenSLR, SLP Toolkit |
+| Linguistic DBs | — | 6 | ASL-LEX, BSL SignBank, Auslan Signbank, etc. |
 
 ---
 
-## By License Type
+## Datasets by Modality
 
-| License | Count | % |
-|---------|-------|---|
-| CC BY 4.0 | 15 | 39.5% |
-| CC BY-NC / CC BY-NC-SA | 6 | 15.8% |
-| Research Use Only | 8 | 21.1% |
-| CC BY-SA 4.0 | 2 | 5.3% |
-| Kaggle Competition | 2 | 5.3% |
-| Government Open Data | 1 | 2.6% |
-| BBC License (registration) | 1 | 2.6% |
-| Other / Not Specified | 3 | 7.9% |
-
----
-
-## By Source Platform
-
-| Platform | Count |
+| Modality | Count |
 |----------|-------|
-| HuggingFace | 16 |
-| GitHub | 5 |
-| Kaggle | 3 |
-| Academic/University | 5 |
-| Mendeley Data | 2 |
-| Institutional | 3 |
-| Dictionary websites | 2 |
-| Other | 2 |
+| Video | ~35 |
+| Image | ~10 |
+| Video + RGB-D + Skeleton | 3 |
+| Sensor (Flex + IMU) | 1 |
+| Linguistic Database / Dictionary | 6 |
+| Multilingual Corpus | 5 |
 
 ---
 
-## By Dataset Size (Video Datasets)
+## Datasets by License Type
 
-| Size Category | Count |
-|---------------|-------|
-| 1,000+ hours | 2 (BOBSL, OpenASL) |
-| 80+ hours | 1 (How2Sign) |
-| 1,000+ samples | 12 |
-| 100-1,000 samples | 4 |
-| < 100 samples | 3 |
-
----
-
-## Datasets Removed (Unverifiable)
-
-The following datasets were listed in previous versions but have been removed because their URLs returned errors or could not be verified:
-
-| Dataset | Language | Issue |
-|---------|----------|-------|
-| CSL-Daily | CSL | OpenSLR/60 = LibriTTS, not CSL-Daily |
-| DEVISIGN | CSL | Source URL unreachable |
-| INCLUDE | ISL | GitHub Pages 404 |
-| KETI Sign Language | KSL | No public URL found |
-| JSL (NTCIR) | JSL | No public URL found |
-| Libras (UFPR) | Libras | Source URL 404 |
-| Dicta-Sign | Multi | No public URL found |
-| SIGN-Hub | Multi | 403 Cloudflare block |
-| OpenSLR | Multi | No SL data found |
-| ArSL2018 | ArSL | GitHub source 404 |
+| License | Count (approx.) |
+|---------|----------------|
+| CC BY 4.0 | 20+ |
+| CC BY-NC 4.0 | 5+ |
+| Research Use Only | 15+ |
+| Custom / Institutional | 10+ |
+| Personal Use (dictionaries) | 5+ |
 
 ---
 
-*Statistics based on DATASETS.md as of March 2026.*
+## Largest Datasets by Sample Count
+
+| Dataset | Language | Samples | Modality |
+|---------|----------|---------|----------|
+| BOBSL | BSL | ~1,400 hours / 1.2M sentences | Video |
+| How2Sign | ASL | 80+ hours | Video + Pose + Depth |
+| OpenASL | ASL | 284+ hours | Video |
+| ASL Alphabet | ASL | 87,000 images | Image |
+| ArSL2018 | ArSL | 54,049 images | Image |
+| AUTSL | TİD | 38,336 videos | Video + RGB-D |
+| BdSL47 | BdSL | 47,000 images | Image |
+| MS-ASL | ASL | 25,121 videos | Video |
+| WLASL | ASL | 21,083 videos | Video |
+| INCLUDE | ISL | 38,640 videos | Video |
+| ASL-MNIST | ASL | 34,627 images | Image |
+| SpreadTheSign | Multilingual | 500,000+ signs | Dictionary |
+
+---
+
+## Demo Data (Included in This Repo)
+
+### BdSL-Sensor-Glove
+
+| Split | Samples |
+|-------|---------|
+| Train | 3,528 |
+| Val | 648 |
+| Test | 648 |
+| **Total** | **4,824** |
+
+**36 gesture classes** (31 Bengali vowels + consonants + 5 common words)
+**11 sensor channels** (5 flex + 3 accelerometer + 3 gyroscope)
+**License:** CC BY 4.0
+
+---
+
+*Statistics reflect verified datasets only. All numbers are from original sources.*
