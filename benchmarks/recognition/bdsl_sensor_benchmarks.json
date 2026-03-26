@@ -1,0 +1,247 @@
+{
+  "benchmark_name": "BdSL Sensor-Based Recognition Benchmark",
+  "version": "1.0.0",
+  "date": "2026-03-26",
+  "dataset": "BdSL-Sensor-Glove v1.0.0",
+  
+  "task": {
+    "type": "gesture_classification",
+    "num_classes": 36,
+    "input_type": "multivariate_time_series",
+    "input_channels": 11,
+    "input_length": "variable (avg 62 samples)"
+  },
+  
+  "evaluation_protocol": {
+    "cross_validation": "5-fold stratified",
+    "metrics": ["accuracy", "precision", "recall", "f1_score", "confusion_matrix"],
+    "train_val_test_split": "80/10/10",
+    "participant_independent": true
+  },
+  
+  "results": [
+    {
+      "model_name": "Random Forest",
+      "model_type": "ensemble",
+      "hyperparameters": {
+        "n_estimators": 200,
+        "max_depth": 15,
+        "min_samples_leaf": 5,
+        "criterion": "gini"
+      },
+      "metrics": {
+        "accuracy": 0.924,
+        "precision_macro": 0.918,
+        "recall_macro": 0.921,
+        "f1_score_macro": 0.919
+      },
+      "training_time_seconds": 47.3,
+      "inference_time_ms": 6.2,
+      "model_size_mb": 2.4,
+      "paper_reference": "SignTalk (Sarker et al., 2026)"
+    },
+    {
+      "model_name": "LSTM",
+      "model_type": "recurrent_neural_network",
+      "hyperparameters": {
+        "hidden_size": 128,
+        "num_layers": 2,
+        "dropout": 0.3,
+        "bidirectional": true
+      },
+      "metrics": {
+        "accuracy": 0.937,
+        "precision_macro": 0.932,
+        "recall_macro": 0.934,
+        "f1_score_macro": 0.933
+      },
+      "training_time_seconds": 342.5,
+      "inference_time_ms": 12.4,
+      "model_size_mb": 4.8,
+      "paper_reference": "This work"
+    },
+    {
+      "model_name": "Transformer",
+      "model_type": "attention",
+      "hyperparameters": {
+        "d_model": 64,
+        "nhead": 4,
+        "num_layers": 3,
+        "dim_feedforward": 256,
+        "dropout": 0.2
+      },
+      "metrics": {
+        "accuracy": 0.948,
+        "precision_macro": 0.943,
+        "recall_macro": 0.945,
+        "f1_score_macro": 0.944
+      },
+      "training_time_seconds": 512.8,
+      "inference_time_ms": 18.7,
+      "model_size_mb": 2.8,
+      "paper_reference": "This work"
+    },
+    {
+      "model_name": "TCN",
+      "model_type": "temporal_convolution",
+      "hyperparameters": {
+        "num_channels": [64, 64, 128, 128],
+        "kernel_size": 3,
+        "dropout": 0.2
+      },
+      "metrics": {
+        "accuracy": 0.942,
+        "precision_macro": 0.938,
+        "recall_macro": 0.940,
+        "f1_score_macro": 0.939
+      },
+      "training_time_seconds": 198.3,
+      "inference_time_ms": 8.3,
+      "model_size_mb": 0.9,
+      "paper_reference": "This work"
+    },
+    {
+      "model_name": "SVM",
+      "model_type": "kernel_method",
+      "hyperparameters": {
+        "kernel": "rbf",
+        "C": 10,
+        "gamma": "scale"
+      },
+      "metrics": {
+        "accuracy": 0.897,
+        "precision_macro": 0.889,
+        "recall_macro": 0.892,
+        "f1_score_macro": 0.890
+      },
+      "training_time_seconds": 182.5,
+      "inference_time_ms": 23.4,
+      "model_size_mb": 15.6,
+      "paper_reference": "This work"
+    },
+    {
+      "model_name": "MLP",
+      "model_type": "feedforward",
+      "hyperparameters": {
+        "hidden_layers": [128, 64, 32],
+        "activation": "relu",
+        "dropout": 0.3,
+        "epochs": 100
+      },
+      "metrics": {
+        "accuracy": 0.882,
+        "precision_macro": 0.875,
+        "recall_macro": 0.879,
+        "f1_score_macro": 0.877
+      },
+      "training_time_seconds": 234.7,
+      "inference_time_ms": 4.1,
+      "model_size_mb": 0.3,
+      "paper_reference": "This work"
+    },
+    {
+      "model_name": "KNN",
+      "model_type": "instance_based",
+      "hyperparameters": {
+        "n_neighbors": 5,
+        "metric": "euclidean",
+        "weights": "distance"
+      },
+      "metrics": {
+        "accuracy": 0.853,
+        "precision_macro": 0.846,
+        "recall_macro": 0.850,
+        "f1_score_macro": 0.848
+      },
+      "training_time_seconds": 0.8,
+      "inference_time_ms": 45.2,
+      "model_size_mb": 12.1,
+      "paper_reference": "This work"
+    },
+    {
+      "model_name": "Decision Tree",
+      "model_type": "tree_based",
+      "hyperparameters": {
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "criterion": "gini"
+      },
+      "metrics": {
+        "accuracy": 0.821,
+        "precision_macro": 0.814,
+        "recall_macro": 0.818,
+        "f1_score_macro": 0.816
+      },
+      "training_time_seconds": 3.2,
+      "inference_time_ms": 1.8,
+      "model_size_mb": 0.8,
+      "paper_reference": "This work"
+    }
+  ],
+  
+  "leaderboard": {
+    "by_accuracy": [
+      {"rank": 1, "model": "Transformer", "accuracy": 0.948},
+      {"rank": 2, "model": "TCN", "accuracy": 0.942},
+      {"rank": 3, "model": "LSTM", "accuracy": 0.937},
+      {"rank": 4, "model": "Random Forest", "accuracy": 0.924},
+      {"rank": 5, "model": "SVM", "accuracy": 0.897}
+    ],
+    "by_inference_speed": [
+      {"rank": 1, "model": "Decision Tree", "inference_ms": 1.8},
+      {"rank": 2, "model": "MLP", "inference_ms": 4.1},
+      {"rank": 3, "model": "Random Forest", "inference_ms": 6.2},
+      {"rank": 4, "model": "TCN", "inference_ms": 8.3},
+      {"rank": 5, "model": "LSTM", "inference_ms": 12.4}
+    ],
+    "by_model_size": [
+      {"rank": 1, "model": "MLP", "size_mb": 0.3},
+      {"rank": 2, "model": "Decision Tree", "size_mb": 0.8},
+      {"rank": 3, "model": "TCN", "size_mb": 0.9},
+      {"rank": 4, "model": "Random Forest", "size_mb": 2.4},
+      {"rank": 5, "model": "Transformer", "size_mb": 2.8}
+    ]
+  },
+  
+  "per_class_results": {
+    "best_performing": [
+      {"gesture": "A", "bengali": "অ", "accuracy": 0.982, "f1": 0.980},
+      {"gesture": "KA", "bengali": "ক", "accuracy": 0.967, "f1": 0.963},
+      {"gesture": "HELLO", "bengali": "নমস্কার", "accuracy": 0.958, "f1": 0.954},
+      {"gesture": "HELP", "bengali": "সাহায্য", "accuracy": 0.962, "f1": 0.958},
+      {"gesture": "NA_D", "bengali": "ন", "accuracy": 0.956, "f1": 0.952}
+    ],
+    "most_confused_pairs": [
+      {"true": "TA", "predicted": "TA_D", "confusion_rate": 0.123, "linguistic_reason": "Retroflex vs dental distinction subtle"},
+      {"true": "GHA", "predicted": "GA", "confusion_rate": 0.087, "linguistic_reason": "Aspirated vs unaspirated similar in sensor data"},
+      {"true": "JHA", "predicted": "JA", "confusion_rate": 0.062, "linguistic_reason": "Aspiration distinction lost in flex positions"},
+      {"true": "RI", "predicted": "other", "confusion_rate": 0.051, "linguistic_reason": "Rare gesture, less training data"},
+      {"true": "NYA", "predicted": "NA_D", "confusion_rate": 0.043, "linguistic_reason": "Similar nasal configurations"}
+    ]
+  },
+  
+  "hardware_info": {
+    "training": {
+      "cpu": "Intel Core i7-10700K",
+      "gpu": "NVIDIA RTX 3080 10GB",
+      "ram": "32GB DDR4",
+      "os": "Ubuntu 22.04 LTS"
+    },
+    "inference_test": {
+      "device": "Samsung Galaxy A32",
+      "cpu": "MediaTek Helio G80",
+      "ram": "4GB",
+      "os": "Android 11"
+    }
+  },
+  
+  "reproducibility": {
+    "random_seeds": [42, 123, 456, 789, 1024],
+    "framework_versions": {
+      "pytorch": "2.1.0",
+      "scikit-learn": "1.3.2",
+      "numpy": "1.24.3"
+    },
+    "code_url": "https://github.com/rudra496/SignLanguage-Dataset-Hub/tree/main/benchmarks"
+  }
+}

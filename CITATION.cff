@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this dataset in your research, please cite it as below."
+title: "SignLanguage Dataset Hub: World's Largest Open-Source Sign Language Data Collection"
+version: 1.0.0
+doi: 10.5281/zenodo.XXXXXXX
+date-released: 2026-03-26
+url: "https://github.com/rudra496/SignLanguage-Dataset-Hub"
+
+authors:
+  - family-names: Sarker
+    given-names: Rudra
+    orcid: https://orcid.org/0000-0000-0000-0000
+    affiliation: Shahjalal University of Science and Technology
+  
+  - name: Team SignTalk
+    affiliation: Shahjalal University of Science and Technology
+
+preferred-citation:
+  type: dataset
+  authors:
+    - family-names: Sarker
+      given-names: Rudra
+    - name: Team SignTalk
+  title: "SignLanguage Dataset Hub: World's Largest Open-Source Sign Language Data Collection"
+  year: 2026
+  publisher: Zenodo
+  doi: 10.5281/zenodo.XXXXXXX
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.XXXXXXX
+  - type: url
+    value: https://github.com/rudra496/SignLanguage-Dataset-Hub
+
+keywords:
+  - sign language
+  - gesture recognition
+  - Bangla Sign Language
+  - BdSL
+  - ASL
+  - sensor glove
+  - flex sensor
+  - assistive technology
+  - machine learning
+  - deep learning
+  - IoT
+  - accessibility
+
+license: CC-BY-4.0
+
+repository-code: "https://github.com/rudra496/SignLanguage-Dataset-Hub"
+
+related-identifiers:
+  - type: doi
+    value: 10.1109/ACCESS.2026.XXXXXXX
+    relation: isDocumentedBy
+    description: "SignTalk paper in IEEE Access"
