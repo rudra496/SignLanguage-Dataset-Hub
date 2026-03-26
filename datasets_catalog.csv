@@ -1,27 +1,43 @@
-dataset_id,dataset_name,language,language_code,modality,samples,signers,license,source_url,citation_key,notes
-BDSL-SENSOR-001,BdSL-Sensor-Glove,Bangla Sign Language,BDSL,sensor,4824,18,CC-BY-4.0,https://github.com/rudra496/SignLanguage-Dataset-Hub,sarker2026signtalk,Demo sensor glove data in this repo
-BDSL-IMG-002,BdSL47,Bangla Sign Language,BDSL,image,47000,10,CC-BY-4.0,https://zenodo.org/record/7067906,afzal2022bdsl47,Original BdSL alphabet and digits
-BDSL-IMG-003,KU-BdSL,Bangla Sign Language,BDSL,image,12500,8,CC-BY-4.0,https://data.mendeley.com/datasets/scpvm2nbkm/1,islam2023kubdsl,Khulna University dataset
-BDSL-VID-001,Ban-Sign-Sent-9K,Bangla Sign Language,BDSL,video,9000,12,CC-BY-NC-4.0,https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1,banglagov2024bansign,Continuous sentence signing
-ASL-VID-001,MS-ASL,American Sign Language,ASL,video,25121,222,Research,https://www.microsoft.com/en-us/research/project/ms-asl/,vaezijoze2019msasl,Large-scale real-life ASL
-ASL-VID-002,WLASL,American Sign Language,ASL,video,21083,100,CC-BY-4.0,https://github.com/dxli94/WLASL,li2020wlasl,Word-level ASL recognition
-ASL-VID-003,How2Sign,American Sign Language,ASL,video,80hr,1,CC-BY-NC,https://how2sign.github.io/,duarte2021how2sign,Continuous ASL instructional videos
-ASL-VID-004,OpenASL,American Sign Language,ASL,video,288hr,200,CC-BY-NC,https://github.com/chevalierNoir/OpenASL,shi2022openasl,Open-domain ASL translation
-ASL-VID-005,AUTSL,Turkish Sign Language,TSL,video,38336,43,CC-BY-4.0,https://arxiv.org/abs/2008.00932,ciga2020autsl,Multi-modal Turkish sign language
-ASL-IMG-001,ASL-MNIST,American Sign Language,ASL,image,34627,N/A,CC-BY-SA-4.0,https://www.kaggle.com/datasets/datamunge/sign-language-mnist,aslmnist2019,MNIST-style ASL alphabet
-ASL-IMG-002,ASL-Alphabet,American Sign Language,ASL,image,87000,1,CC-BY-4.0,https://www.kaggle.com/datasets/grassknoted/asl-alphabet,aslalphabet2018,Kaggle ASL alphabet
-ASL-VID-006,ASLLVD,American Sign Language,ASL,video,9800,6,Research,https://www.bu.edu/asllrp/av/dai-asllvd.html,athitsos2020asllvd,ASL Lexicon Video Dataset
-BSL-VID-001,BOBSL,British Sign Language,BSL,video,1940eps,39,BBC,https://www.robots.ox.ac.uk/~vgg/data/bobsl/,albanie2021bobsl,BBC broadcast footage
-BSL-VID-002,BSL-Corpus,British Sign Language,BSL,video,160hr,N/A,CC-BY-NC,http://bslcorpusproject.org/,schembri2013bslcorpus,Conversational BSL
-ISL-VID-001,INCLUDE,Indian Sign Language,ISL,video,38640,15,Research,https://signlanguage-iisc.github.io/,sridhar2020include,ISL word recognition
-ISL-VID-002,ISL-CSLTR,Indian Sign Language,ISL,video,N/A,N/A,CC-BY,https://data.mendeley.com/datasets/kcmpdxky7p/1,jadhav2021islcsltr,Continuous ISL translation
-CSL-VID-001,CSL-Daily,Chinese Sign Language,CSL,video,20654,10,Research,https://www.openslr.org/,zhou2021csldaily,Continuous Chinese sign language
-CSL-VID-002,DEVISIGN,Chinese Sign Language,CSL,video,2000,8,Research,http://home.ustc.edu.cn/~alexhu/,li2019devisign,CASIA isolated signs
-DGS-VID-001,RWTH-PHOENIX-2014,German Sign Language,DGS,video,6841,9,Research,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/,koller2015phoenix,Weather broadcast continuous SLR
-DGS-VID-002,RWTH-PHOENIX-2014T,German Sign Language,DGS,video,8257,9,Research,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/,koller2019phoenixt,Translation benchmark
-ARSL-IMG-001,ArSL2018,Arabic Sign Language,ArSL,image,54049,40,CC-BY,https://www.kaggle.com/datasets/ahmedkhan123/arabic-sign-language,arsl2018,Arabic alphabet
-MULTI-VID-001,Dicta-Sign,Multilingual,Multiple,video,4000,16,Research,https://www.dictasign.eu,mattheyses2012dictasign,BSL DGS GSL LSF
-MULTI-RES-001,ASL-LEX,Multilingual,ASL,database,N/A,N/A,CC-BY,https://asl-lex.org/,caselli2020asllex,Linguistic database
-MULTI-RES-002,Spreadthesign,Multilingual,20+ languages,dictionary,N/A,N/A,Free,https://www.spreadthesign.com/,spreadthesign,Multilingual dictionary
-MULTI-RES-003,OpenSLR,Multilingual,Multiple,corpus,N/A,N/A,Various,https://www.openslr.org/,openslr,Speech and sign language corpora
-MULTI-RES-004,SIGN-Hub,Multilingual,7 languages,corpus,N/A,N/A,Research,https://www.sign-hub.eu/,signhub,EU project annotation tools
+dataset_id,name,language,language_code,modality,samples,signers,license,source_url,citation_key,notes
+ms-asl,MS-ASL,American Sign Language,asl,video,"25,121 videos; 1,000 classes",222,Research Use Only,https://www.microsoft.com/en-us/research/project/ms-asl/,vaezijoze2019msasl,American Sign Language dataset from Microsoft
+wlasl,WLASL,American Sign Language,asl,video,"21,083 videos; 2,000 words",-,CC BY 4.0,https://github.com/dxli94/WLASL,li2020wlasl,Word-level ASL recognition dataset from YouTube
+how2sign,How2Sign,American Sign Language,asl,video+pose+depth,"80+ hours; multiview",-,CC BY-NC 4.0,https://how2sign.github.io/,duarte2021how2sign,Continuous ASL with pose and depth data
+openasl,OpenASL,American Sign Language,asl,video,"288 hours; 200+ signers",200+,CC BY-NC 4.0,https://github.com/chevalierNoir/OpenASL,shi2022openasl,Open-domain ASL translation dataset from online video
+asllvd,ASLLVD,American Sign Language,asl,video,"3,300+ signs; 9,800 tokens","1-6 per sign",Research Use,https://www.bu.edu/asllrp/av/dai-asllvd.html,athitsos_asllvd,ASL Lexicon Video Dataset from Boston University
+asl-mnist,ASL-MNIST,American Sign Language,asl,image,"34,627 images; 24 classes",-,CC BY-SA 4.0,https://www.kaggle.com/datasets/datamunge/sign-language-mnist,-,Sign Language MNIST on Kaggle
+asl-alphabet,ASL Alphabet,American Sign Language,asl,image,"87,000 images; 29 classes",-,CC BY 4.0,https://www.kaggle.com/datasets/grassknoted/asl-alphabet,-,ASL Alphabet images on Kaggle
+chalearn-lap,ChaLearn LAP Challenge,Turkish Sign Language (AUTSL subset),tid,video+rgbd+skeleton,"36,302 samples; 226 signs",43,Research Use,https://chalearnlap.cvc.uab.cat/,escalera2021chalearn,ChaLearn Looking at People challenge using AUTSL
+asl-mnist-hf,American Sign Language MNIST,American Sign Language,asl,image,"34,627 images",-,CC BY-SA 4.0,https://huggingface.co/datasets/Voxel51/American-Sign-Language-MNIST,-,ASL MNIST on HuggingFace
+asl-dataset-hf,American Sign Language Dataset,American Sign Language,asl,image,47 images,-,Research Use,https://huggingface.co/datasets/akasheroor/American-Sign-Language-Dataset,-,ASL images on HuggingFace
+karsl-502,KArSL-502,Arabic Sign Language,arsl,video,"502 classes",-,Research Use,https://huggingface.co/datasets/FatimahEmadEldin/karsl-502-arabic-sign-language-v2,-,Large-scale Arabic sign language dataset
+arabic-t2sl,Arabic Text-to-Sign Language,Arabic Sign Language,arsl,text,9 samples,-,Research Use,https://huggingface.co/datasets/Selimx2001x/Arabic-Text-to-Sign-Language-Translation,-,Arabic text-to-sign translation data
+auslan-signbank,Auslan Signbank,Australian Sign Language,auslan,video dictionary,extensive dictionary,-,Non-commercial,https://auslan.org.au/,-,Official Auslan dictionary with videos
+bdsl47,BdSL47,Bangla Sign Language,bdsl,image,"47,000 images; 47 classes",-,CC BY 4.0,https://zenodo.org/record/7067906,afzal2022bdsl47,Bangla Sign Language image dataset
+ku-bdsl,KU-BdSL,Bangla Sign Language,bdsl,image,"1,500 images per variant; 3 variants; 30 classes",33,CC BY 4.0,https://data.mendeley.com/datasets/scpvm2nbkm/1,islam2021kubdsl,Khulna University Bengali Sign Language dataset
+ban-sign-sent-9k,Ban-Sign-Sent-9K,Bangla Sign Language,bdsl,video,"9,610 videos; 1,922 sentences",-,CC BY-NC,https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1,-,Continuous Bangla Sign Language sentences
+bdsl-sensor,BdSL-Sensor-Glove Demo,Bangla Sign Language,bdsl,sensor,"4,824 recordings; 36 gestures; 11 channels",-,CC BY 4.0,data/bdsl/BdSL-Sensor-Glove/,-,Included in this repository
+bobsl,BOBSL,British Sign Language,bsl,video,"1,400 hours; 1,940 episodes; 37 signers",37,BBC License,https://www.robots.ox.ac.uk/~vgg/data/bobsl/,albanie2021bobsl,BBC-Oxford British Sign Language Dataset
+bsl-corpus,BSL Corpus,British Sign Language,bsl,video,160+ hours,-,CC BY-NC,https://www.bslcorpusproject.org/,schembri_bslcorpus,British Sign Language Corpus Project
+rwth-phoenix-2014,RWTH-PHOENIX-Weather 2014,German Sign Language,dgs,video,"6,841 sentences; 386 editions",9,Research Use,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/,koller2015phoenix,German sign language weather forecast benchmark
+rwth-phoenix-2014t,RWTH-PHOENIX-Weather 2014T,German Sign Language,dgs,video+translation,"8,257 sentences with glosses",-,Research Use,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/,camgoz2018phoenix,PHOENIX with German translations
+ghanaian-sl,Ghanaian Sign Language Lexicon,Ghanaian Sign Language,gsl_gh,video,135 samples,-,Research Use,https://huggingface.co/datasets/jameszokah/ghanaian-sign-language-lexicon,-,Ghanaian sign language lexicon
+gsl-multimodal,Multimodal Greek Sign Language,Greek Sign Language,gsl,video+audio,multimodal dataset,-,Research Use,https://huggingface.co/datasets/dkourem/Multimodal_Greek_Sign_Language_and_Lip_Reading,-,Greek SL with lip reading data
+hindi-sl,Hindi Sign Language Dataset,Hindi Sign Language,hsl,image,16200+ images,-,CC BY 4.0,https://huggingface.co/datasets/Vedant3907/Hindi-Sign-Language-Dataset,-,Hindi sign language images
+isl-csltr,ISL-CSLTR,Indian Sign Language,isl,video,sentence-level with gloss annotations,6,CC BY 4.0,https://data.mendeley.com/datasets/kcmpdxky7p/1,jadhav2021isl,Indian SL continuous sign language translation
+isl-alphabet,ISL-Alphabet,Indian Sign Language,isl,image,"12,700 images; 26 classes",-,CC BY 4.0,https://github.com/ayeshatasnim-h/Indian-Sign-Language-dataset,-,ISL alphabet image dataset
+isl-akrit,Indian Sign Language Dataset,Indian Sign Language,isl,image,10800+ images,-,CC BY 4.0,https://huggingface.co/datasets/akritRihal/Indian_Sign_Language_dataset,-,ISL images on HuggingFace
+isl-hemg,Indian Sign Language Dataset,Indian Sign Language,isl,image,42700+ images,-,CC BY 4.0,https://huggingface.co/datasets/Hemg/Indian_sign_language_dataset,-,ISL images on HuggingFace
+isl-datagov,Indian Sign Language Data.gov,Indian Sign Language,isl,image,10200+ images,-,Government Open Data,https://huggingface.co/datasets/silentone0725/Indian_Sign_Language_Data.gov_Rencoded,-,Indian government ISL data on HuggingFace
+msl,Malaysian Sign Language Dataset,Malaysian Sign Language,bim,video,various,-,Research Use,https://huggingface.co/datasets/jherng/malaysian-sign-language,-,MSL from Universiti Malaya
+msl-v1,Malaysian Sign Language v1,Malaysian Sign Language,bim,video,105 samples,-,Research Use,https://huggingface.co/datasets/PishangShedappp/malaysian-sign-language-dataset-v1,-,MSL dataset v1 on HuggingFace
+spreadthesign,Spreadthesign,Multilingual,mul,video dictionary,500000+ signs,-,Personal use only,https://www.spreadthesign.com/,-,Multilingual SL dictionary; 20+ languages
+asl-lex,ASL-LEX,American Sign Language,asl,linguistic database,-,-,CC BY 4.0,https://asl-lex.org/,-,ASL phonological/lexical database
+crowdsourced-t2sl,Crowdsourced Text-to-Sign Corpus,Multilingual,mul,text,5130+ samples,-,Research Use,https://huggingface.co/datasets/sltAI/crowdsourced-text-to-sign-language-rule-based-translation-corpus,-,Text-to-sign translation corpus
+sl-gestures,Sign Language Gestures Recognition,Multilingual,mul,image,various,-,Research Use,https://huggingface.co/datasets/Nexdata/Sign_Language_Gestures_Recognition_Data,-,Multi-sign gesture images
+nsl,Nigerian Sign Language,Nigerian Sign Language,nsl,video,5250+ samples,-,Research Use,https://huggingface.co/datasets/Lanfrica/sign-to-speech-for-sign-language-understanding-a-case-study-of-nigerian-sign-language,-,NSL sign-to-speech dataset
+tsl-51,TSL-51,Thai Sign Language,tsl,video+pose,various,-,CC BY-NC-SA 4.0,https://huggingface.co/datasets/Namonpas/thai-sign-language-tsl51,-,Thai SL with pose estimation
+autsl,AUTSL,Turkish Sign Language,tid,video+rgbd+skeleton,"38,336 videos; 226 signs; 43 signers",43,CC BY 4.0,https://arxiv.org/abs/2008.00932,ciga2020autsl,Ankara University TSL dataset
+sl-26,Sign Language 26,Multilingual,mul,image,various,-,Research Use,https://huggingface.co/datasets/Gsco-HF/sign-language-26,-,Multi-class SL images
+sl-sokdr,Sign Language SoKDR,Multilingual,mul,image,720+ samples,-,Research Use,https://huggingface.co/datasets/Francesco/sign-language-sokdr,-,Sign language object detection dataset
+sl-miniproject,Sign Language MiniProject,Multilingual,mul,image/video,14800+ samples,-,Research Use,https://huggingface.co/datasets/Jonasbj99/SignLanguage_MiniProject,-,Sign language mini project dataset
+t2sl,Text-to-Sign-Language Translation,Multilingual,mul,text,various,-,Research Use,https://huggingface.co/datasets/Selimx2001x/Text-to-Sign-Language-Translation-Dataset,-,Text-to-sign translation annotations
