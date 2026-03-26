@@ -1,30 +1,16 @@
 {
-  "dataset_name": "BdSL-Sensor-Glove",
+  "dataset_name": "BdSL-Sensor-Glove Demo",
   "version": "1.0.0",
   "created_date": "2026-03-26",
-  "last_modified": "2026-03-26",
-  "doi": "10.5281/zenodo.1234567",
   "license": "CC BY 4.0",
   
-  "description": "First large-scale sensor-based Bangla Sign Language (BdSL) dataset collected using a custom smart glove with flex sensors and IMU. This dataset contains gesture samples from 18 native BdSL signers performing 36 distinct gestures including vowels, consonants, and common words.",
+  "description": "Demo sensor dataset for Bangla Sign Language (BdSL) gesture recognition. This is a sample dataset for learning and prototyping sign language recognition systems. Contains simulated sensor readings from a smart glove concept.",
   
-  "paper_reference": {
-    "title": "SignTalk: An IoT-Based Smart Glove for Real-Time Bangla Sign Language Recognition Using Flex Sensors and Machine Learning",
-    "authors": ["Rudra Sarker", "Team SignTalk"],
-    "journal": "IEEE Access",
-    "year": 2026,
-    "doi": "10.1109/ACCESS.2026.XXXXXXX"
-  },
+  "data_type": "DEMO - Sample data for educational purposes",
   
-  "collection_info": {
-    "location": "Sylhet, Bangladesh",
-    "institution": "Shahjalal University of Science and Technology (SUST)",
-    "period": "October 2025 - February 2026",
-    "environment": "Indoor controlled environment (25±2°C, 60±10% humidity)",
-    "ethical_approval": "SUST-IRB-2025-047"
-  },
+  "note": "This is demonstration data for developers learning sign language recognition. For real datasets, see DATASETS.md for links to actual collected datasets from researchers worldwide.",
   
-  "hardware_specs": {
+  "hardware_concept": {
     "microcontroller": "ESP8266 NodeMCU v3",
     "flex_sensors": {
       "model": "Spectra Symbol FS-L-0054-103-ST",
@@ -38,104 +24,53 @@
       "gyroscope_range": "±250°/s",
       "resolution_bits": 16
     },
-    "sampling_rate_hz": 50,
-    "wireless": "WiFi (802.11 b/g/n) via MQTT"
+    "sampling_rate_hz": 50
   },
   
   "data_format": {
     "file_format": "JSON",
-    "samples_per_file": 100,
-    "compression": "gzip",
     "encoding": "UTF-8"
   },
   
-  "splits": {
-    "train": {
-      "samples": 31104,
-      "participants": 14,
-      "file": "train/data_train.json.gz"
-    },
-    "val": {
-      "samples": 3888,
-      "participants": 2,
-      "file": "val/data_val.json.gz"
-    },
-    "test": {
-      "samples": 3888,
-      "participants": 2,
-      "file": "test/data_test.json.gz"
-    }
+  "samples_included": {
+    "train": 3528,
+    "val": 648,
+    "test": 648,
+    "total": 4824
   },
   
   "gestures": {
-    "vowels": [
-      {"id": "A", "bengali": "অ", "ipa": "/ɔ/", "samples": 1080},
-      {"id": "AA", "bengali": "আ", "ipa": "/a/", "samples": 1080},
-      {"id": "I", "bengali": "ই", "ipa": "/i/", "samples": 1080},
-      {"id": "II", "bengali": "ঈ", "ipa": "/iː/", "samples": 1080},
-      {"id": "U", "bengali": "উ", "ipa": "/u/", "samples": 1080},
-      {"id": "UU", "bengali": "ঊ", "ipa": "/uː/", "samples": 1080},
-      {"id": "RI", "bengali": "ঋ", "ipa": "/ri/", "samples": 1080},
-      {"id": "E", "bengali": "এ", "ipa": "/e/", "samples": 1080},
-      {"id": "OI", "bengali": "ঐ", "ipa": "/oi/", "samples": 1080},
-      {"id": "O", "bengali": "ও", "ipa": "/o/", "samples": 1080},
-      {"id": "OU", "bengali": "ঔ", "ipa": "/ou/", "samples": 1080}
-    ],
-    "consonants": [
-      {"id": "KA", "bengali": "ক", "ipa": "/k/", "samples": 1080},
-      {"id": "KHA", "bengali": "খ", "ipa": "/kʰ/", "samples": 1080},
-      {"id": "GA", "bengali": "গ", "ipa": "/ɡ/", "samples": 1080},
-      {"id": "GHA", "bengali": "ঘ", "ipa": "/ɡʱ/", "samples": 1080},
-      {"id": "NGA", "bengali": "ঙ", "ipa": "/ŋ/", "samples": 1080},
-      {"id": "CA", "bengali": "চ", "ipa": "/tʃ/", "samples": 1080},
-      {"id": "CHA", "bengali": "ছ", "ipa": "/tʃʰ/", "samples": 1080},
-      {"id": "JA", "bengali": "জ", "ipa": "/dʒ/", "samples": 1080},
-      {"id": "JHA", "bengali": "ঝ", "ipa": "/dʒʱ/", "samples": 1080},
-      {"id": "NYA", "bengali": "ঞ", "ipa": "/ɲ/", "samples": 1080},
-      {"id": "TA", "bengali": "ট", "ipa": "/ʈ/", "samples": 1080},
-      {"id": "THA", "bengali": "ঠ", "ipa": "/ʈʰ/", "samples": 1080},
-      {"id": "DA", "bengali": "ড", "ipa": "/ɖ/", "samples": 1080},
-      {"id": "DHA", "bengali": "ঢ", "ipa": "/ɖʱ/", "samples": 1080},
-      {"id": "NA", "bengali": "ণ", "ipa": "/ɳ/", "samples": 1080},
-      {"id": "TA_D", "bengali": "ত", "ipa": "/t/", "samples": 1080},
-      {"id": "THA_D", "bengali": "থ", "ipa": "/tʰ/", "samples": 1080},
-      {"id": "DA_D", "bengali": "দ", "ipa": "/d/", "samples": 1080},
-      {"id": "DHA_D", "bengali": "ধ", "ipa": "/dʱ/", "samples": 1080},
-      {"id": "NA_D", "bengali": "ন", "ipa": "/n/", "samples": 1080}
-    ],
-    "words": [
-      {"id": "HELLO", "bengali": "নমস্কার", "english": "hello", "samples": 1080},
-      {"id": "THANKYOU", "bengali": "ধন্যবাদ", "english": "thank you", "samples": 1080},
-      {"id": "HELP", "bengali": "সাহায্য", "english": "help", "samples": 1080},
-      {"id": "WATER", "bengali": "জল", "english": "water", "samples": 1080},
-      {"id": "FOOD", "bengali": "খাবার", "english": "food", "samples": 1080}
-    ]
+    "vowels": ["A", "AA", "I", "II", "U", "UU", "RI", "E", "OI", "O", "OU"],
+    "consonants": ["KA", "KHA", "GA", "GHA", "NGA", "CA", "CHA", "JA", "JHA", "NYA", 
+                   "TA", "THA", "DA", "DHA", "NA", "TA_D", "THA_D", "DA_D", "DHA_D", "NA_D"],
+    "words": ["HELLO", "THANKYOU", "HELP", "WATER", "FOOD"],
+    "total": 36
   },
   
-  "participants": {
-    "count": 18,
-    "demographics": {
-      "gender": {"male": 10, "female": 8},
-      "age": {"min": 19, "max": 38, "mean": 26.3, "std": 6.2},
-      "hearing_loss_type": {"congenital": 14, "acquired_early": 4},
-      "education": {"secondary": 12, "higher_secondary": 4, "undergraduate": 2}
+  "gesture_names": {
+    "A": "অ", "AA": "আ", "I": "ই", "II": "ঈ", "U": "উ", "UU": "ঊ",
+    "RI": "ঋ", "E": "এ", "OI": "ঐ", "O": "ও", "OU": "ঔ",
+    "KA": "ক", "KHA": "খ", "GA": "গ", "GHA": "ঘ", "NGA": "ঙ",
+    "CA": "চ", "CHA": "ছ", "JA": "জ", "JHA": "ঝ", "NYA": "ঞ",
+    "TA": "ট", "THA": "ঠ", "DA": "ড", "DHA": "ঢ", "NA": "ণ",
+    "TA_D": "ত", "THA_D": "থ", "DA_D": "দ", "DHA_D": "ধ", "NA_D": "ন",
+    "HELLO": "নমস্কার", "THANKYOU": "ধন্যবাদ", "HELP": "সাহায্য",
+    "WATER": "জল", "FOOD": "খাবার"
+  },
+  
+  "real_datasets_for_reference": {
+    "note": "For actual collected BdSL datasets, see:",
+    "bdsl47": {
+      "url": "https://zenodo.org/record/7067906",
+      "samples": 47000,
+      "type": "image",
+      "citation": "Afzal et al. (2022)"
+    },
+    "ku-bdsl": {
+      "url": "https://data.mendeley.com/datasets/scpvm2nbkm/1",
+      "samples": 12500,
+      "type": "image",
+      "citation": "Islam et al. (2023)"
     }
-  },
-  
-  "quality_metrics": {
-    "min_snr_db": 18.2,
-    "max_snr_db": 35.7,
-    "mean_snr_db": 27.4,
-    "missing_samples_rate": 0.0003,
-    "outlier_rate": 0.0012
-  },
-  
-  "statistics": {
-    "total_raw_samples": 42120,
-    "total_valid_samples": 38880,
-    "mean_duration_ms": 1243,
-    "std_duration_ms": 382,
-    "min_duration_ms": 420,
-    "max_duration_ms": 2130
   }
 }

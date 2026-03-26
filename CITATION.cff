@@ -1,57 +1,37 @@
 cff-version: 1.2.0
-message: "If you use this dataset in your research, please cite it as below."
-title: "SignLanguage Dataset Hub: World's Largest Open-Source Sign Language Data Collection"
+message: "If you use this dataset hub, please cite and credit the original dataset creators."
+title: "World Sign Language Dataset Hub"
 version: 1.0.0
-doi: 10.5281/zenodo.XXXXXXX
 date-released: 2026-03-26
 url: "https://github.com/rudra496/SignLanguage-Dataset-Hub"
 
 authors:
   - family-names: Sarker
     given-names: Rudra
-    orcid: https://orcid.org/0000-0000-0000-0000
-    affiliation: Shahjalal University of Science and Technology
-  
-  - name: Team SignTalk
     affiliation: Shahjalal University of Science and Technology
 
-preferred-citation:
-  type: dataset
-  authors:
-    - family-names: Sarker
-      given-names: Rudra
-    - name: Team SignTalk
-  title: "SignLanguage Dataset Hub: World's Largest Open-Source Sign Language Data Collection"
-  year: 2026
-  publisher: Zenodo
-  doi: 10.5281/zenodo.XXXXXXX
-
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.XXXXXXX
-  - type: url
-    value: https://github.com/rudra496/SignLanguage-Dataset-Hub
+license: CC-BY-4.0
 
 keywords:
   - sign language
   - gesture recognition
-  - Bangla Sign Language
-  - BdSL
-  - ASL
-  - sensor glove
-  - flex sensor
-  - assistive technology
-  - machine learning
-  - deep learning
-  - IoT
+  - dataset
   - accessibility
+  - machine learning
+  - assistive technology
+  - open source
 
-license: CC-BY-4.0
+description: |
+  A curated collection of links to publicly available sign language datasets
+  from around the world. Includes demo sample data for learning and prototyping.
+  
+  This hub provides:
+  - Links to 150+ sign language datasets
+  - Demo sensor data for prototyping
+  - Data loading tools and tutorials
+  - Proper credits to all original dataset creators
 
-repository-code: "https://github.com/rudra496/SignLanguage-Dataset-Hub"
-
-related-identifiers:
-  - type: doi
-    value: 10.1109/ACCESS.2026.XXXXXXX
-    relation: isDocumentedBy
-    description: "SignTalk paper in IEEE Access"
+notes: |
+  - Demo data included is for educational/prototyping purposes only
+  - Real datasets are linked with proper attribution
+  - Always cite original dataset creators
