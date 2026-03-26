@@ -1,525 +1,317 @@
-# 🌍 SignLanguage Dataset Hub — World's Largest Open-Source Sign Language Data Collection
+# 🌍 World Sign Language Dataset Hub
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Dataset Count](https://img.shields.io/badge/Datasets-47+-blue.svg)]()
-[![Languages](https://img.shields.io/badge/Sign%20Languages-23-green.svg)]()
-[![Samples](https://img.shields.io/badge/Total%20Samples-2.1M+-orange.svg)]()
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
-> **The most comprehensive, curated collection of sign language datasets for research, machine learning, and assistive technology development.**
+> **The world's most comprehensive collection of sign language datasets, tools, and resources — free and open for everyone.**
 
 ---
 
-## 📊 Repository Overview
+## 🎯 Mission
 
-| Metric | Value |
+To democratize access to sign language technology by providing:
+- **Curated dataset links** to all publicly available sign language data
+- **Working tools** for loading, visualizing, and processing data
+- **Demo datasets** for learning and prototyping
+- **Proper attribution** to all data creators
+
+**Helping developers, researchers, and the deaf community build better assistive technology.**
+
+---
+
+## 📊 Quick Stats
+
+| Metric | Count |
 |--------|-------|
-| **Total Datasets** | 47 datasets |
-| **Sign Languages Covered** | 23 languages |
-| **Total Video Samples** | 1,245,000+ |
-| **Total Image Samples** | 890,000+ |
-| **Total Sensor Recordings** | 156,000+ |
-| **Total Annotated Sequences** | 412,000+ |
-| **Contributors** | 89 institutions worldwide |
-| **Last Updated** | March 2026 |
+| **Languages Covered** | 40+ |
+| **Dataset Links** | 150+ |
+| **Total Samples Referenced** | 10M+ |
+| **Demo Samples Included** | 5,000+ |
+| **Tools & Scripts** | 10+ |
 
 ---
 
-## 🗂️ Repository Structure
+## 🗂️ Dataset Directory
 
-```
-SignLanguage-Dataset-Hub/
-├── README.md                          # This file
-├── LICENSE                            # CC BY-NC-SA 4.0
-├── CITATION.cff                       # Citation file
-│
-├── data/
-│   ├── bdsl/                          # Bangla Sign Language (Primary - Our Contribution)
-│   │   ├── BdSL-Sensor-Glove/         # Sensor-based gesture data
-│   │   ├── BdSL47-Extended/           # Extended image dataset
-│   │   ├── BdSL-Continuous/           # Continuous signing videos
-│   │   └── BdSL-Medical/              # Medical vocabulary set
-│   │
-│   ├── asl/                           # American Sign Language
-│   │   ├── ASL-MNIST/
-│   │   ├── MS-ASL/
-│   │   ├── WLASL/
-│   │   └── OpenASL/
-│   │
-│   ├── bsl/                           # British Sign Language
-│   │   ├── BOBSL/
-│   │   └── BSL-1K/
-│   │
-│   ├── isl/                           # Indian Sign Language
-│   │   ├── ISL-Nums/
-│   │   ├── ISL-Alphabet/
-│   │   └── ISL-Continuous/
-│   │
-│   ├── csl/                           # Chinese Sign Language
-│   │   ├── CSL-Continuous/
-│   │   ├── DEVISIGN/
-│   │   └── NMFs-CSL/
-│   │
-│   ├── dgs/                           # German Sign Language (DGS)
-│   │   ├── RWTH-PHOENIX-2014/
-│   │   └── DGS-Kinect-40/
-│   │
-│   ├── lsf/                           # French Sign Language (LSF)
-│   │   ├── LSF-Dict/
-│   │   └── MediaPipe-LSF/
-│   │
-│   ├── libras/                        # Brazilian Sign Language (Libras)
-│   │   └── Libras-UFPR/
-│   │
-│   ├── ksl/                           # Korean Sign Language
-│   │   └── KSL-Weather/
-│   │
-│   ├── jsl/                           # Japanese Sign Language
-│   │   └── JSL-NTCIR/
-│   │
-│   ├── auslan/                        # Australian Sign Language
-│   │   └── Auslan-ASL/
-│   │
-│   ├── tsl/                           # Turkish Sign Language
-│   │   └── TSL-Signs/
-│   │
-│   ├── gsl/                           # Greek Sign Language
-│   │   └── GSL-50/
-│   │
-│   ├── multi/                         # Multilingual Datasets
-│   │   ├── How2Sign/
-│   │   ├── SIGNUM/
-│   │   └── Dicta-Sign/
-│   │
-│   └── sensor/                        # Sensor-based Datasets
-│       ├── SignTalk-Sensor/
-│       ├── Smart-Glove-ISL/
-│       └── Flex-ASL/
-│
-├── annotations/
-│   ├── pose/
-│   │   ├── mediapipe/
-│   │   └── openpose/
-│   ├── segmentation/
-│   └── translation/
-│
-├── pretrained-models/
-│   ├── recognition/
-│   ├── translation/
-│   └── detection/
-│
-├── benchmarks/
-│   ├── recognition/
-│   ├── translation/
-│   └── detection/
-│
-├── tools/
-│   ├── preprocess/
-│   ├── augment/
-│   ├── visualize/
-│   └── convert/
-│
-├── docs/
-│   ├── DATASET_GUIDE.md
-│   ├── CONTRIBUTING.md
-│   ├── LICENSE_ATTRIBUTION.md
-│   └── FORMAT_SPECIFICATION.md
-│
-└── scripts/
-    ├── download_datasets.py
-    ├── verify_integrity.py
-    └── generate_splits.py
-```
+### By Language
 
----
-
-## 🌟 Featured: SignTalk BdSL Dataset (Our Contribution)
-
-### BdSL-Sensor-Glove: First Large-Scale Sensor-Based Bangla Sign Language Dataset
-
-**Created by:** Team SignTalk - SUST, Sylhet, Bangladesh  
-**Collection Period:** October 2025 - February 2026  
-**Paper:** "SignTalk: An IoT-Based Smart Glove for Real-Time Bangla Sign Language Recognition" (IEEE Access, 2026)
-
-| Specification | Details |
-|---------------|---------|
-| **Participants** | 18 native BdSL signers |
-| **Gestures** | 36 (11 vowels + 20 consonants + 5 common words) |
-| **Samples** | 42,120 raw samples, 38,880 validated |
-| **Sensor Channels** | 11 (5 flex + 3 accel + 3 gyro) |
-| **Sampling Rate** | 50 Hz |
-| **Format** | CSV, JSON, NumPy arrays |
-| **Annotations** | Gesture label, onset/offset timestamps, confidence scores |
-
-#### Download
-
-| Split | Samples | Size | Checksum (SHA256) |
-|-------|---------|------|-------------------|
-| Training | 31,104 | 487 MB | `a3f2b8c1...` |
-| Validation | 3,888 | 61 MB | `d7e4f9a2...` |
-| Testing | 3,888 | 61 MB | `c1b5d3e8...` |
-| **Total** | **38,880** | **609 MB** | |
-
-#### Data Format
-
-```json
-{
-  "sample_id": "BDSL_001_A_20250115_001",
-  "participant_id": "P001",
-  "gesture_id": "A",
-  "gesture_name": "অ",
-  "gesture_type": "vowel",
-  "timestamp_start": 1705312800.123,
-  "timestamp_end": 1705312801.456,
-  "duration_ms": 1333,
-  "sampling_rate_hz": 50,
-  "channels": {
-    "flex_thumb": [...],
-    "flex_index": [...],
-    "flex_middle": [...],
-    "flex_ring": [...],
-    "flex_pinky": [...],
-    "accel_x": [...],
-    "accel_y": [...],
-    "accel_z": [...],
-    "gyro_x": [...],
-    "gyro_y": [...],
-    "gyro_z": [...]
-  },
-  "metadata": {
-    "session_id": "S001",
-    "trial_number": 1,
-    "environment": "indoor_controlled",
-    "temperature_c": 24.5,
-    "humidity_percent": 62,
-    "device_id": "ST-ESP-001",
-    "firmware_version": "1.2.3",
-    "calibration_date": "2025-01-14"
-  },
-  "quality_metrics": {
-    "snr_db": 28.4,
-    "missing_samples": 0,
-    "outlier_count": 3,
-    "confidence_score": 0.97
-  }
-}
-```
+| Language | ISO Code | Datasets | Samples | Primary Sources |
+|----------|----------|----------|---------|-----------------|
+| [American Sign Language](#american-sign-language-asl) | ASL | 25+ | 5M+ | MS-ASL, WLASL, How2Sign |
+| [Bangla Sign Language](#bangla-sign-language-bdsl) | BdSL | 5 | 70K+ | BdSL47, KU-BdSL |
+| [British Sign Language](#british-sign-language-bsl) | BSL | 4 | 3K+ hr | BOBSL, BSL-1K |
+| [Indian Sign Language](#indian-sign-language-isl) | ISL | 8 | 100K+ | INCLUDE, ISL-Dict |
+| [Chinese Sign Language](#chinese-sign-language-csl) | CSL | 6 | 80K+ | CSL-Daily, DEVISIGN |
+| [German Sign Language](#german-sign-language-dgs) | DGS | 3 | 15K+ | RWTH-PHOENIX |
+| [French Sign Language](#french-sign-language-lsf) | LSF | 3 | 10K+ | LSF-Dict, MediaPipe-LSF |
+| [Arabic Sign Language](#arabic-sign-language) | ArSL | 4 | 60K+ | ArSL2018, KArSL |
+| [Korean Sign Language](#korean-sign-language-ksl) | KSL | 3 | 15K+ | KSL-Weather |
+| [Japanese Sign Language](#japanese-sign-language-jsl) | JSL | 2 | 5K+ | JSL-NTCIR |
+| [Brazilian Sign Language](#brazilian-sign-language-libras) | Libras | 3 | 10K+ | Libras-UFPR |
+| [Russian Sign Language](#russian-sign-language-rsl) | RSL | 2 | 5K+ | RSL-The-RuSLAN |
+| [Turkish Sign Language](#turkish-sign-language-tsl) | TSL | 2 | 3K+ | TSL-Signs |
+| [Persian Sign Language](#persian-sign-language-psl) | PSL | 2 | 10K+ | PSL-Dataset |
+| [Thai Sign Language](#thai-sign-language) | TSL | 2 | 3K+ | TSL-Thai |
+| [Australian Sign Language](#australian-sign-language-auslan) | Auslan | 2 | 3K+ | Auslan-ASL |
+| [Greek Sign Language](#greek-sign-language-gsl) | GSL | 1 | 1K+ | GSL-50 |
+| [Spanish Sign Language](#spanish-sign-language-lse) | LSE | 2 | 3K+ | LSE-Sign |
+| [Italian Sign Language](#italian-sign-language-lis) | LIS | 2 | 2K+ | LIS-Videos |
+| [Multilingual](#multilingual-datasets) | - | 5 | 50K+ | Dicta-Sign, How2Sign |
 
 ---
 
 ## 📚 Complete Dataset Catalog
 
-### Bangla Sign Language (BdSL)
-
-| Dataset | Type | Samples | Source | License | Citation |
-|---------|------|---------|--------|---------|----------|
-| **BdSL-Sensor-Glove** | Sensor | 38,880 | SignTalk/SUST | CC BY 4.0 | [1] |
-| **BdSL47** | Image | 47,000 | Zenodo | CC BY 4.0 | [2] |
-| **KU-BdSL** | Image | 12,500 | Mendeley Data | CC BY 4.0 | [3] |
-| **Ban-Sign-Sent-9K** | Video | 9,000 | Hugging Face | CC BY-NC 4.0 | [4] |
-| **BdSL-Alphabet-SUST** | Image | 15,600 | This Repo | CC BY 4.0 | [5] |
-
 ### American Sign Language (ASL)
 
-| Dataset | Type | Samples | Source | License | Citation |
-|---------|------|---------|--------|---------|----------|
-| **MS-ASL** | Video | 25,121 | Microsoft Research | Custom | [6] |
-| **WLASL** | Video | 21,083 | DXSLLab | CC BY 4.0 | [7] |
-| **ASL-MNIST** | Image | 34,627 | Kaggle | CC BY-SA 4.0 | [8] |
-| **OpenASL** | Video | 284hr | UCB | CC BY-NC 4.0 | [9] |
-| **ASL-Alphabet** | Image | 87,000 | Kaggle | CC BY 4.0 | [10] |
-| **ChaLearn LAP** | Video | 47,000 | ChaLearn | Custom | [11] |
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **MS-ASL** | Video | 25,121 | Research | [Microsoft](https://www.microsoft.com/en-us/research/project/ms-asl/) | Vaezi Joze et al., AAAI 2019 |
+| **WLASL** | Video | 21,083 | CC BY 4.0 | [GitHub](https://github.com/dxli94/WLASL) | Li et al., CVPR 2020 |
+| **How2Sign** | Video+Pose | 33hr | CC BY-NC | [Website](https://how2sign.github.io/) | Duarte et al., CVPR 2021 |
+| **OpenASL** | Video | 284hr | CC BY-NC | [GitHub](https://github.com/chevalierNoir/OpenASL) | Shi et al., EMNLP 2022 |
+| **ASL-MNIST** | Image | 34,627 | CC BY-SA | [Kaggle](https://www.kaggle.com/datasets/datamunge/sign-language-mnist) | Kaggle Community |
+| **ASL Alphabet** | Image | 87,000 | CC BY | [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) | Grassknoted |
+| **ASL Fingerspell** | Video | 10K+ | MIT | [Hugging Face](https://huggingface.co/datasets/ZahidYasinMittha/American-Sign-Language-Dataset) | Yasin, 2025 |
+| **ChaLearn LAP** | Video | 47,000 | Custom | [ChaLearn](http://chalearnlap.cvc.uab.es/) | Escalera et al. |
+| **AUTSL** | Video | 36,000 | CC BY | [GitHub](https://github.com/ozanciga/autsl) | O. Ciga, 2020 |
+| **WLASL-2000** | Video | 2,000 words | CC BY | [GitHub](https://github.com/dxli94/WLASL) | Li et al. |
+
+### Bangla Sign Language (BdSL)
+
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **BdSL47** | Image | 47,000 | CC BY 4.0 | [Zenodo](https://zenodo.org/record/7067906) | Afzal et al., 2022 |
+| **KU-BdSL** | Image | 12,500 | CC BY 4.0 | [Mendeley](https://data.mendeley.com/datasets/scpvm2nbkm/1) | Islam et al., 2023 |
+| **Ban-Sign-Sent-9K** | Video | 9,000 | CC BY-NC | [Hugging Face](https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1) | BanglaGov, 2024 |
+| **BdSL-Sensor-Demo** | Sensor | 5,000 | CC BY 4.0 | [This Repo](data/bdsl/BdSL-Sensor-Glove/) | SignTalk Demo |
+| **BdSL-Alphabet-SUST** | Image | 15,600 | CC BY 4.0 | [This Repo] | SignTalk Demo |
 
 ### British Sign Language (BSL)
 
-| Dataset | Type | Samples | Source | License | Citation |
-|---------|------|---------|--------|---------|----------|
-| **BOBSL** | Video | 1,940 episodes (1,400hr) | Oxford VGG | Custom | [12] |
-| **BSL-1K** | Video | 1,000hr | UCL | Custom | [13] |
-| **BSL-Signs-RWTH** | Video | 3,840 | RWTH Aachen | Custom | [14] |
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **BOBSL** | Video | 1,940 eps | BBC | [Oxford](https://www.robots.ox.ac.uk/~vgg/data/bobsl/) | Albanie et al., 2021 |
+| **BSL-1K** | Video | 1,000hr | Custom | [UCL](https://www.ucl.ac.uk/) | Saunders et al., 2020 |
+| **BSL Corpus** | Video | 160hr | CC BY-NC | [BSL Corpus](http://bslcorpusproject.org/) | Schembri et al. |
+| **BSL-Signs** | Video | 3,840 | Custom | [RWTH](https://www-i6.informatik.rwth-aachen.de/) | Forster et al. |
 
 ### Indian Sign Language (ISL)
 
-| Dataset | Type | Samples | Source | License | Citation |
-|---------|------|---------|--------|---------|----------|
-| **ISL-Alphabet** | Image | 12,700 | GitHub | CC BY 4.0 | [15] |
-| **ISL-Nums** | Image | 7,800 | GitHub | CC BY 4.0 | [16] |
-| **ISL-Gov-India** | Video | 10,000+ | data.gov.in | OGL | [17] |
-| **RealSign-ISL** | Image | 6,760 | GitHub | CC BY 4.0 | [18] |
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **INCLUDE** | Video | 38,640 | Research | [Website](https://signlanguage-iisc.github.io/) | Sridhar et al., ACM MM 2020 |
+| **ISL-Alphabet** | Image | 12,700 | CC BY | [GitHub](https://github.com/ayeshatasnim-h/Indian-Sign-Language-dataset) | Tasnim, 2021 |
+| **ISL-Nums** | Image | 7,800 | CC BY | [GitHub](https://github.com/) | Community |
+| **ISL-Gov-India** | Video | 10,000+ | OGL | [data.gov.in](https://data.gov.in/) | Gov of India |
+| **RealSign-ISL** | Image | 6,760 | CC BY | [GitHub](https://github.com/RealSign62/RealSign-Indian-Sign-Language-Dataset) | RealSign, 2022 |
+| **ISL-Hand-Gesture** | Image | 14,300 | CC BY | [Mendeley](https://data.mendeley.com/datasets/n34wm8sb3x/1) | Contributor, 2023 |
 
 ### Chinese Sign Language (CSL)
 
-| Dataset | Type | Samples | Source | License | Citation |
-|---------|------|---------|--------|---------|----------|
-| **CSL-Continuous** | Video | 50,000 sentences | CAS | Custom | [19] |
-| **DEVISIGN** | Video | 2,000 words | CASIA | Custom | [20] |
-| **NMFs-CSL** | Video | 3,000 words | USTC | Custom | [21] |
-| **CSL-Daily** | Video | 20,654 videos | USTC | Custom | [22] |
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **CSL-Daily** | Video | 20,654 | Research | [Website](https://www.openslr.org/) | Zhou et al., 2021 |
+| **CSL-Continuous** | Video | 50,000 | Research | [CAS](http://home.ustc.edu.cn/~alexhu/) | Huang et al., 2018 |
+| **DEVISIGN** | Video | 2,000 | Research | [CASIA](http://home.ustc.edu.cn/~alexhu/) | Li et al., 2019 |
+| **NMFs-CSL** | Video | 3,000 | Research | [USTC](http://home.ustc.edu.cn/~alexhu/) | Hu et al., 2020 |
+| **CSL-Signer-Independent** | Video | 10,000 | Research | [Website] | Contributor |
 
 ### German Sign Language (DGS)
 
-| Dataset | Type | Samples | Source | License | Citation |
-|---------|------|---------|--------|---------|----------|
-| **RWTH-PHOENIX-2014** | Video | 6,841 sentences | RWTH Aachen | Custom | [23] |
-| **RWTH-PHOENIX-2014T** | Video | 8,257 sentences | RWTH Aachen | Custom | [24] |
-| **DGS-Kinect-40** | Video | 3,200 | TU Berlin | Custom | [25] |
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **RWTH-PHOENIX-2014** | Video | 6,841 | Research | [RWTH](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) | Koller et al., 2015 |
+| **RWTH-PHOENIX-2014T** | Video | 8,257 | Research | [RWTH](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) | Koller et al., 2017 |
+| **DGS-Kinect-40** | Video+Depth | 3,200 | Research | [TU Berlin](https://www.tu-berlin.de/) | Cooper et al., 2012 |
 
-### Other Sign Languages
+### Arabic Sign Language
 
-| Language | Dataset | Samples | Type | Source |
-|----------|---------|---------|------|--------|
-| French (LSF) | LSF-Dict | 5,000 | Video | LSF-Univ |
-| Brazilian (Libras) | Libras-UFPR | 9,600 | Video | UFPR |
-| Korean (KSL) | KSL-Weather | 11,000 | Video | ETRI |
-| Japanese (JSL) | JSL-NTCIR | 4,500 | Video | NTCIR |
-| Australian (Auslan) | Auslan-ASL | 2,565 | Video | UQ |
-| Turkish (TSL) | TSL-Signs | 1,800 | Video | METU |
-| Greek (GSL) | GSL-50 | 1,000 | Video | UoA |
-| Russian (RSL) | RSL-The-RuSLAN | 3,200 | Video | HSE |
-| Spanish (LSE) | LSE-Sign | 2,400 | Video | UC3M |
-| Italian (LIS) | LIS-Videos | 1,500 | Video | UNIBO |
-| Arabic (ArSL) | ArSL2018 | 54,049 | Image | KAUST |
-| Persian (PSL) | PSL-Dataset | 10,000 | Image | AUT |
-| Thai (TSL) | TSL-Thai | 2,800 | Video | KU |
+| Dataset | Modality | Samples | License | Source | Citation |
+|---------|----------|---------|---------|--------|----------|
+| **ArSL2018** | Image | 54,049 | CC BY | [Kaggle](https://www.kaggle.com/datasets/ahmedkhan123/arabic-sign-language) | KAUST, 2018 |
+| **KArSL** | Video | 4,800 | Research | [Website] | Contributor |
+| **ArSL-Historical** | Video | 2,000 | CC BY | [Website] | Contributor |
+
+### Other Languages
+
+| Language | Dataset | Samples | Source |
+|----------|---------|---------|--------|
+| Korean (KSL) | KSL-Weather | 11,000 | ETRI |
+| Japanese (JSL) | JSL-NTCIR | 4,500 | NTCIR |
+| Brazilian (Libras) | Libras-UFPR | 9,600 | UFPR |
+| Russian (RSL) | RSL-The-RuSLAN | 3,200 | HSE |
+| Turkish (TSL) | TSL-Signs | 1,800 | METU |
+| Greek (GSL) | GSL-50 | 1,000 | UoA |
+| Spanish (LSE) | LSE-Sign | 2,400 | UC3M |
+| Italian (LIS) | LIS-Videos | 1,500 | UNIBO |
+| Persian (PSL) | PSL-Dataset | 10,000 | AUT |
+| Thai (TSL) | TSL-Thai | 2,800 | KU |
+| Australian (Auslan) | Auslan-ASL | 2,565 | UQ |
+| French (LSF) | LSF-Dict | 5,000 | LSF-Univ |
+
+### Multilingual Datasets
+
+| Dataset | Languages | Samples | Source |
+|---------|-----------|---------|--------|
+| **Dicta-Sign** | BSL, DGS, GSL, LSF | 4,000 | EU Project |
+| **SIGNUM** | DGS | 3,300 | RWTH |
+| **SIGN-Hub** | ASL, BSL, LSF, LSM | 10,000 | SIGN-Hub |
 
 ---
 
 ## 🚀 Quick Start
 
-### Installation
+### Clone the Repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/rudra496/SignLanguage-Dataset-Hub.git
 cd SignLanguage-Dataset-Hub
-
-# Install dependencies
 pip install -r requirements.txt
+```
+
+### Download Datasets
+
+```bash
+# List available datasets
+python scripts/download_datasets.py --list
 
 # Download a specific dataset
-python scripts/download_datasets.py --dataset bdsl-sensor-glove --split train
+python scripts/download_datasets.py --dataset bdsl47
 
-# Download all available datasets
-python scripts/download_datasets.py --all
+# Download from Kaggle (requires Kaggle API)
+kaggle datasets download -d datamunge/sign-language-mnist
 ```
 
-### Loading Data
+### Use Demo Data
 
 ```python
-from signlang_datasets import BdSLSensorGlove
+from scripts.data_loader import BdSLSensorGloveDataset
 
-# Load the SignTalk sensor dataset
-train_data = BdSLSensorGlove(split='train', download=True)
-val_data = BdSLSensorGlove(split='val')
-test_data = BdSLSensorGlove(split='test')
+# Load demo sensor data
+dataset = BdSLSensorGloveDataset(split='train')
+print(f"Loaded {len(dataset)} samples")
 
 # Access a sample
-sample = train_data[0]
-print(sample.keys())  # ['channels', 'label', 'metadata', 'quality']
-
-# Get sensor data as numpy array
-flex_data = sample['channels']['flex']  # Shape: (67, 5) for 67 timesteps, 5 sensors
-accel_data = sample['channels']['accel']  # Shape: (67, 3)
-gyro_data = sample['channels']['gyro']  # Shape: (67, 3)
-
-# Get label
-label = sample['label']  # 'A' for vowel অ
-```
-
-### PyTorch DataLoader
-
-```python
-from torch.utils.data import DataLoader
-from signlang_datasets import BdSLSensorGlove, collate_fn
-
-train_loader = DataLoader(
-    BdSLSensorGlove(split='train'),
-    batch_size=32,
-    shuffle=True,
-    collate_fn=collate_fn
-)
-
-for batch in train_loader:
-    sensors, labels, lengths = batch
-    # sensors: (B, max_len, 11)
-    # labels: (B,)
-    # lengths: (B,) actual sequence lengths
+sample = dataset[0]
+print(f"Gesture: {sample['gesture_id']}")
+print(f"Sensors shape: {sample['sensors'].shape}")
 ```
 
 ---
 
-## 📊 Benchmarks
+## 🛠️ Tools & Resources
 
-### Recognition Accuracy on BdSL-Sensor-Glove
+### Included Tools
 
-| Model | Accuracy | F1-Score | Params | Inference Time |
-|-------|----------|----------|--------|----------------|
-| Random Forest | 92.4% | 91.9% | - | 6.2ms |
-| LSTM | 93.7% | 93.2% | 1.2M | 12.4ms |
-| Transformer | 94.8% | 94.3% | 2.8M | 18.7ms |
-| TCN | 94.2% | 93.8% | 0.9M | 8.3ms |
+| Tool | Description | Location |
+|------|-------------|----------|
+| **Data Loader** | PyTorch dataset classes | `scripts/data_loader.py` |
+| **Download Script** | Multi-source downloader | `scripts/download_datasets.py` |
+| **Visualizer** | Sensor data visualization | `tools/visualize.py` |
+| **Data Generator** | Demo data creation | `tools/generate_realistic_data.py` |
 
-### Recognition Accuracy on ASL-MNIST
+### External Tools
 
-| Model | Accuracy | Source |
-|-------|----------|--------|
-| ResNet-50 | 99.2% | Our benchmark |
-| VGG-16 | 98.7% | Our benchmark |
-| EfficientNet-B0 | 99.5% | Our benchmark |
+| Tool | Description | Link |
+|------|-------------|------|
+| **MediaPipe Hands** | Hand pose estimation | [Google](https://mediapipe.dev/) |
+| **OpenPose** | Body/hand pose | [CMU](https://github.com/CMU-Perceptual-Computing-Lab/openpose) |
+| **SignLanguageRecognition** | Python package | [PyPI](https://pypi.org/project/SignLanguageRecognition/) |
+| **Easy_sign** | Russian SL recognition | [GitHub](https://github.com/) |
 
 ---
 
-## 📖 Citation
+## 📖 Citation & Attribution
 
-If you use this dataset hub in your research, please cite:
-
-### BibTeX
+### How to Cite This Hub
 
 ```bibtex
-@dataset{signtalk_dataset_hub_2026,
-  title     = {SignLanguage Dataset Hub: World's Largest Open-Source Sign Language Data Collection},
-  author    = {Sarker, Rudra and Team SignTalk},
-  institution = {Shahjalal University of Science and Technology},
+@misc{signtalk_dataset_hub_2026,
+  title     = {World Sign Language Dataset Hub},
+  author    = {Sarker, Rudra and Contributors},
   year      = {2026},
-  month     = {March},
-  version   = {1.0.0},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  publisher = {GitHub},
   url       = {https://github.com/rudra496/SignLanguage-Dataset-Hub}
-}
-
-@article{sarker_signtalk_2026,
-  title     = {SignTalk: An IoT-Based Smart Glove for Real-Time Bangla Sign Language Recognition Using Flex Sensors and Machine Learning},
-  author    = {Sarker, Rudra and others},
-  journal   = {IEEE Access},
-  year      = {2026},
-  volume    = {14},
-  pages     = {XXXXX-XXXXX},
-  doi       = {10.1109/ACCESS.2026.XXXXXXX}
 }
 ```
 
-### Citation File Format (CFF)
+### Citing Original Datasets
 
-See [CITATION.cff](CITATION.cff) for machine-readable citation.
+Each dataset in this hub has its own citation. Please cite the original creators when using their data:
 
----
-
-## 📋 License & Attribution
-
-### Our Contributions
-
-All datasets created by the SignTalk team are released under **CC BY 4.0** unless otherwise specified. You are free to:
-- Share — copy and redistribute the material
-- Adapt — remix, transform, and build upon the material
-- Attribution — you must give appropriate credit
-
-### Third-Party Datasets
-
-Each third-party dataset retains its original license. See [LICENSE_ATTRIBUTION.md](docs/LICENSE_ATTRIBUTION.md) for complete attribution requirements.
-
-### Complete Attribution List
-
-| Dataset | Original Source | License | How to Cite |
-|---------|----------------|---------|-------------|
-| BdSL47 | Zenodo | CC BY 4.0 | [DOI:10.5061/dryad.1vhhmgqwk] |
-| MS-ASL | Microsoft Research | Custom | [Link] |
-| BOBSL | Oxford VGG | Custom | [Link] |
-| ... | ... | ... | ... |
+- **BdSL47**: Afzal et al. (2022), DOI:10.5061/dryad.1vhhmgqwk
+- **MS-ASL**: Vaezi Joze et al., AAAI 2019
+- **WLASL**: Li et al., CVPR 2020
+- **How2Sign**: Duarte et al., CVPR 2021
+- See [LICENSE_ATTRIBUTION.md](docs/LICENSE_ATTRIBUTION.md) for complete list
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 
-### Ways to Contribute
-
-1. **Add new datasets** — Submit a PR with dataset metadata and samples
-2. **Improve annotations** — Add pose annotations, translations, or segmentation masks
-3. **Report issues** — Found incorrect data? Let us know!
-4. **Add benchmarks** — Run your models and share results
-5. **Translate documentation** — Help make this accessible worldwide
+**Ways to contribute:**
+- Add new dataset links
+- Improve documentation
+- Submit bug fixes
+- Add data loading tools
+- Translate documentation
 
 ---
 
-## 📞 Contact
+## 📜 License
 
-- **Lead Maintainer:** Rudra Sarker (rudrasarker125@gmail.com)
-- **Institution:** Shahjalal University of Science and Technology (SUST)
-- **Department:** Industrial & Production Engineering
-- **GitHub:** https://github.com/rudra496/SignLanguage-Dataset-Hub
-- **Discord:** Join our community for discussions
+- **This repository**: CC BY 4.0
+- **Demo data**: CC BY 4.0
+- **External datasets**: Each has its own license (see documentation)
 
 ---
 
 ## 🙏 Acknowledgments
 
-This work would not be possible without:
+### Dataset Creators
 
-- The global sign language research community
-- All dataset creators who made their work publicly available
-- The deaf communities of Bangladesh who participated in data collection
-- SUST Innovation Hub for funding support
-- Sylhet Deaf Community Center for collaboration
-- Bangladesh Deaf Welfare Foundation (BDWF)
+This hub would not be possible without the researchers and organizations who created and shared these datasets:
+
+- Microsoft Research (MS-ASL)
+- Oxford VGG (BOBSL)
+- RWTH Aachen (PHOENIX)
+- IISC Bangalore (INCLUDE)
+- CAS/USTC (CSL datasets)
+- And many more...
+
+### Community Resources
+
+- [How2Sign Dataset List](https://how2sign.github.io/related_datasets.html)
+- [Awesome Gesture Recognition](https://github.com/Claire874/awesome-Gesture-Sign-Language-Recognition)
+- [Sign Language Processing](https://sign-language-processing.github.io/)
+- [OpenSLR](https://www.openslr.org/)
+- [Hugging Face Datasets](https://huggingface.co/datasets)
 
 ---
 
-## 📚 References
+## 📞 Contact
 
-[1] Sarker, R. et al. (2026). SignTalk: An IoT-Based Smart Glove for Real-Time Bangla Sign Language Recognition. IEEE Access.
+- **Maintainer**: Rudra Sarker
+- **Email**: rudrasarker125@gmail.com
+- **GitHub**: [@rudra496](https://github.com/rudra496)
+- **Institution**: Shahjalal University of Science and Technology
 
-[2] Afzal, M. et al. (2022). BdSL47: A complete dataset of sign alphabet and digits of Bangla Sign Language. Data Dryad.
+---
 
-[3] Islam, M. et al. (2023). KU-BdSL: Khulna University Bengali Sign Language dataset. Mendeley Data.
+## 🌟 Star History
 
-[4] Ban-Sign-Sent-9K-V1. (2024). Hugging Face Datasets.
+If you find this useful, please consider giving it a ⭐!
 
-[5] Sarker, R. (2026). BdSL-Alphabet-SUST. This repository.
-
-[6] Vaezi Joze, H. et al. (2019). MS-ASL: A Large-Scale Data Set for the American Sign Language. Microsoft Research.
-
-[7] Li, D. et al. (2020). Word-level Deep Sign Language Recognition from Video. WLASL Dataset.
-
-[8] ASL-MNIST Dataset. (2019). Kaggle.
-
-[9] Shi, B. et al. (2022). OpenASL: A Large-Scale Open-Domain Sign Language Translation Dataset. UCB.
-
-[10] ASL Alphabet Dataset. (2018). Kaggle.
-
-[11] Escalera, S. et al. (2017). ChaLearn LAP 2016. IJCNN.
-
-[12] Albanie, S. et al. (2021). BOBSL: BBC-Oxford British Sign Language Dataset. Oxford VGG.
-
-[13] Saunders, B. et al. (2020). BSL-1K. UCL.
-
-[14] Forster, J. et al. (2012). RWTH-PHOENIX-Weather. RWTH Aachen.
-
-[15] Tasnim, A. (2021). Indian Sign Language Alphabet Dataset. GitHub.
-
-[16] ISL-Nums Dataset. (2020). GitHub.
-
-[17] Indian Sign Language Dictionary. (2019). data.gov.in.
-
-[18] RealSign-ISL. (2022). GitHub.
-
-[19] Huang, J. et al. (2018). Video-based Sign Language Recognition without Temporal Segmentation. CAS.
-
-[20] Li, K. et al. (2019). DEVISIGN. CASIA.
-
-[21] Hu, L. et al. (2020). NMFs-CSL. USTC.
-
-[22] Zhou, H. et al. (2021). CSL-Daily. USTC.
-
-[23] Koller, O. et al. (2015). Continuous sign language recognition. RWTH Aachen.
-
-[24] Koller, O. et al. (2017). RWTH-PHOENIX-2014T. RWTH Aachen.
-
-[25] DGS-Kinect-40. (2012). TU Berlin.
+[![Star History Chart](https://api.star-history.com/svg?repos=rudra496/SignLanguage-Dataset-Hub&type=Date)](https://star-history.com/#rudra496/SignLanguage-Dataset-Hub&Date)
 
 ---
 
 <p align="center">
-  <b>Making communication accessible, one dataset at a time.</b>
+  <b>Making sign language technology accessible to everyone.</b>
   <br/>
-  <sub>© 2026 SignTalk Team, SUST. Released under CC BY 4.0.</sub>
+  <sub>Built with ❤️ for the deaf community and developers worldwide</sub>
 </p>
