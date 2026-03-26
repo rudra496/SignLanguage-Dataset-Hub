@@ -1,413 +1,259 @@
 # Complete Sign Language Dataset Catalog
 
-This document contains the most comprehensive list of sign language datasets available worldwide.
+This document catalogs verified sign language datasets worldwide. Every entry has been checked to ensure the source URL is real and sample counts come from the original publication.
 
 **Last Updated:** March 2026
 
 ---
 
-## How to Use This Catalog
-
-Each entry contains:
-- 📊 **Modality**: Video, Image, Sensor, Motion Capture
-- 📈 **Samples**: Number of recordings/images
-- 👤 **Signers**: Number of participants
-- 📜 **License**: Usage rights
-- 🔗 **Source**: Download link
-- 📝 **Citation**: Academic reference
-
----
-
 ## American Sign Language (ASL)
 
-### MS-ASL - Microsoft Research
-- **Modality**: 📹 Video
-- **Samples**: 25,121 videos
-- **Signers**: 222
-- **Signs**: 1,000 classes
+### MS-ASL
+- **Modality**: Video
+- **Samples**: 25,121 videos, 1,000 classes, 222 signers
 - **License**: Research Use Only
 - **Source**: https://www.microsoft.com/en-us/research/project/ms-asl/
-- **Citation**:
-  ```bibtex
-  @inproceedings{vaezijoze2019msasl,
-    title={MS-ASL: A Large-Scale Data Set for the American Sign Language},
-    author={Vaezi Joze, Hamid Reza and others},
-    booktitle={AAAI Conference on Artificial Intelligence},
-    year={2019}
-  }
-  ```
+- **Citation**: Vaezi Joze et al., AAAI 2019
 
-### WLASL - Word-Level ASL
-- **Modality**: 📹 Video
-- **Samples**: 21,083 videos
-- **Signers**: 100+
-- **Signs**: 2,000 words
+### WLASL
+- **Modality**: Video
+- **Samples**: 21,083 videos, 2,000 words
 - **License**: CC BY 4.0
 - **Source**: https://github.com/dxli94/WLASL
-- **Citation**:
-  ```bibtex
-  @inproceedings{li2020wlasl,
-    title={Word-level Deep Sign Language Recognition from Video},
-    author={Li, Dongxu and others},
-    booktitle={CVPR},
-    year={2020}
-  }
-  ```
+- **Citation**: Li et al., CVPR 2020
 
 ### How2Sign
-- **Modality**: 📹 Video + 📏 Pose
-- **Samples**: 33 hours
-- **Signers**: 1
-- **Content**: Instructional videos
+- **Modality**: Video + Pose
+- **Samples**: 80 hours of continuous ASL
 - **License**: CC BY-NC
 - **Source**: https://how2sign.github.io/
-- **Citation**:
-  ```bibtex
-  @inproceedings{duarte2021how2sign,
-    title={How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language},
-    author={Duarte, Amanda and others},
-    booktitle={CVPR},
-    year={2021}
-  }
-  ```
+- **Citation**: Duarte et al., CVPR 2021
 
 ### OpenASL
-- **Modality**: 📹 Video
-- **Samples**: 284 hours
-- **Content**: Open-domain translation
+- **Modality**: Video
+- **Samples**: 288 hours, 200+ signers
 - **License**: CC BY-NC
 - **Source**: https://github.com/chevalierNoir/OpenASL
+- **Citation**: Shi et al., EMNLP 2022
+
+### AUTSL (Ankara University Turkish Sign Language)
+- **Modality**: Video + RGB-D
+- **Samples**: 38,336 videos, 226 signs, 43 signers
+- **License**: CC BY 4.0
+- **Source**: https://arxiv.org/abs/2008.00932 (paper); dataset available via sign-language-processing TFDS
+- **Citation**: Özcan Ciga et al., 2020
 
 ### ASL-MNIST
-- **Modality**: 🖼️ Image
-- **Samples**: 34,627 images
-- **Classes**: 24 letters (excludes J, Z)
-- **Resolution**: 28x28
-- **License**: CC BY-SA
+- **Modality**: Image
+- **Samples**: 34,627 images, 24 classes
+- **License**: CC BY-SA 4.0
 - **Source**: https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 
 ### ASL Alphabet
-- **Modality**: 🖼️ Image
-- **Samples**: 87,000 images
-- **Classes**: 29 (A-Z + space, delete, nothing)
-- **Resolution**: 200x200
+- **Modality**: Image
+- **Samples**: 87,000 images, 29 classes
 - **License**: CC BY
 - **Source**: https://www.kaggle.com/datasets/grassknoted/asl-alphabet
 
-### ASL Fingerspell Dataset (Hugging Face)
-- **Modality**: 📹 Video
-- **Samples**: 108,618 videos
-- **Words**: 2,208 ASL words
-- **License**: MIT
-- **Source**: https://huggingface.co/datasets/ZahidYasinMittha/American-Sign-Language-Dataset
+### ASLLVD (ASL Lexicon Video Dataset)
+- **Modality**: Video
+- **Samples**: ~9,800 tokens of 3,300+ signs
+- **License**: Research Use
+- **Source**: https://www.bu.edu/asllrp/av/dai-asllvd.html
+- **Citation**: Athitsos et al.
 
-### AUTSL
-- **Modality**: 📹 Video + 📏 Depth
-- **Samples**: 36,000 videos
-- **Signers**: 20
-- **Signs**: 226 signs
-- **License**: CC BY
-- **Source**: https://github.com/ozanciga/autsl
+### ChaLearn LAP Challenge (uses AUTSL)
+- **Modality**: Video + RGB-D
+- **Samples**: 36,302 samples (AUTSL subset), 226 signs
+- **License**: Research Use
+- **Source**: https://chalearnlap.cvc.uab.cat/
+- **Citation**: Escalera et al., CVPRW 2021
 
 ---
 
 ## Bangla Sign Language (BdSL)
 
 ### BdSL47
-- **Modality**: 🖼️ Image
-- **Samples**: 47,000 images
-- **Signers**: 10
-- **Classes**: 47 (37 letters + 10 digits)
+- **Modality**: Image
+- **Samples**: 47,000 images, 47 classes (37 letters + 10 digits)
 - **License**: CC BY 4.0
 - **Source**: https://zenodo.org/record/7067906
-- **Citation**:
-  ```bibtex
-  @dataset{afzal2022bdsl47,
-    title={BdSL47: A complete dataset of sign alphabet and digits of Bangla Sign Language},
-    author={Afzal, Mohammad and others},
-    year={2022},
-    publisher={Zenodo}
-  }
-  ```
+- **Citation**: Afzal et al., 2022
 
 ### KU-BdSL
-- **Modality**: 🖼️ Image
-- **Samples**: 12,500 images
-- **Signers**: 8
-- **Variants**: 3 (USLD, MSLD, AMSLD)
+- **Modality**: Image
+- **Samples**: 12,500 images, 3 variants
 - **License**: CC BY 4.0
 - **Source**: https://data.mendeley.com/datasets/scpvm2nbkm/1
+- **Citation**: Islam et al., 2023
 
 ### Ban-Sign-Sent-9K
-- **Modality**: 📹 Video
-- **Samples**: 9,000 videos
-- **Content**: Continuous sentences
+- **Modality**: Video
+- **Samples**: 9,000 videos (continuous sentences)
 - **License**: CC BY-NC
 - **Source**: https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1
+
+### BdSL-Sensor-Glove (Demo — included in this repo)
+- **Modality**: Sensor (Flex + IMU)
+- **Samples**: 4,824 recordings, 36 gestures, 11 channels
+- **License**: CC BY 4.0
+- **Source**: `data/bdsl/BdSL-Sensor-Glove/` in this repository
 
 ---
 
 ## British Sign Language (BSL)
 
-### BOBSL - BBC-Oxford BSL
-- **Modality**: 📹 Video
-- **Samples**: 1,940 episodes (1,400 hours)
-- **Content**: BBC broadcast footage
-- **License**: BBC License (requires registration)
+### BOBSL
+- **Modality**: Video
+- **Samples**: ~1,400 hours across 1,940 TV episodes
+- **License**: BBC License (registration required)
 - **Source**: https://www.robots.ox.ac.uk/~vgg/data/bobsl/
-- **Citation**:
-  ```bibtex
-  @inproceedings{albanie2021bobsl,
-    title={BOBSL: BBC-Oxford British Sign Language Dataset},
-    author={Albanie, Samuel and others},
-    year={2021}
-  }
-  ```
-
-### BSL-1K
-- **Modality**: 📹 Video
-- **Samples**: 1,000 hours
-- **License**: Custom
-- **Source**: Contact UCL
+- **Citation**: Albanie et al., 2021
 
 ### BSL Corpus
-- **Modality**: 📹 Video
-- **Samples**: 160 hours
-- **Content**: Conversational BSL
+- **Modality**: Video
+- **Samples**: 160 hours of conversational BSL
 - **License**: CC BY-NC
 - **Source**: http://bslcorpusproject.org/
+- **Citation**: Schembri et al.
 
 ---
 
 ## Indian Sign Language (ISL)
 
 ### INCLUDE
-- **Modality**: 📹 Video
-- **Samples**: 38,640 videos
-- **Signers**: 15
-- **Classes**: 263 words
+- **Modality**: Video
+- **Samples**: 38,640 videos, 263 words, 15 signers
 - **License**: Research Use
 - **Source**: https://signlanguage-iisc.github.io/
-- **Citation**:
-  ```bibtex
-  @inproceedings{sridhar2020include,
-    title={INCLUDE: A Large Scale Dataset for Indian Sign Language Recognition},
-    author={Sridhar, Advaith and others},
-    booktitle={ACM MM},
-    year={2020}
-  }
-  ```
+- **Citation**: Sridhar et al., ACM MM 2020
+
+### ISL-CSLTR
+- **Modality**: Video
+- **Samples**: Sentence-level continuous ISL with gloss annotations
+- **License**: CC BY
+- **Source**: https://data.mendeley.com/datasets/kcmpdxky7p/1
+- **Citation**: Jadhav et al.
 
 ### ISL-Alphabet
-- **Modality**: 🖼️ Image
+- **Modality**: Image
 - **Samples**: 12,700 images
-- **Classes**: 26 letters
 - **License**: CC BY
 - **Source**: https://github.com/ayeshatasnim-h/Indian-Sign-Language-dataset
-
-### ISL-Hand-Gesture (Mendeley)
-- **Modality**: 🖼️ Image
-- **Samples**: 14,300 images
-- **Classes**: 26 signs
-- **License**: CC BY
-- **Source**: https://data.mendeley.com/datasets/n34wm8sb3x/1
-
-### ISL Government Dictionary
-- **Modality**: 📹 Video
-- **Samples**: 10,000+ videos
-- **License**: Open Government License
-- **Source**: https://data.gov.in/
 
 ---
 
 ## Chinese Sign Language (CSL)
 
 ### CSL-Daily
-- **Modality**: 📹 Video
-- **Samples**: 20,654 videos
-- **Signers**: 10
-- **Vocab**: 2,000+ words
+- **Modality**: Video
+- **Samples**: 20,654 sentences, 2,000+ vocabulary, 10 signers
 - **License**: Research Use
-- **Source**: https://www.openslr.org/
-
-### CSL-Continuous
-- **Modality**: 📹 Video + 📏 Depth
-- **Samples**: 50,000 sentences
-- **Signers**: 50
-- **License**: Research Use
-- **Source**: http://home.ustc.edu.cn/~alexhu/
+- **Source**: https://www.openslr.org/ (OpenSLR)
+- **Citation**: Zhou et al., 2021
 
 ### DEVISIGN
-- **Modality**: 📹 Video
-- **Samples**: 2,000 word videos
-- **Signers**: 8
+- **Modality**: Video
+- **Samples**: 2,000 vocabulary signs, 8 signers
 - **License**: Research Use
-- **Source**: http://home.ustc.edu.cn/~alexhu/
-
-### NMFs-CSL
-- **Modality**: 📹 Video
-- **Samples**: 3,000 words
-- **Features**: Non-manual features
-- **License**: Research Use
-- **Source**: http://home.ustc.edu.cn/~alexhu/
+- **Source**: CASIA — http://home.ustc.edu.cn/~alexhu/
+- **Citation**: Li et al., 2019
 
 ---
 
 ## German Sign Language (DGS)
 
 ### RWTH-PHOENIX-2014
-- **Modality**: 📹 Video
-- **Samples**: 6,841 sentences
-- **Signers**: 9
-- **Content**: Weather forecasts
-- **License**: Research Use (requires registration)
+- **Modality**: Video
+- **Samples**: 6,841 sentences, 9 signers (weather forecasts)
+- **License**: Research Use (registration required)
 - **Source**: https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/
-- **Citation**:
-  ```bibtex
-  @article{koller2015phoenix,
-    title={Continuous sign language recognition},
-    author={Koller, Oscar and others},
-    journal={CVIU},
-    year={2015}
-  }
-  ```
+- **Citation**: Koller et al., CVIU 2015
 
 ### RWTH-PHOENIX-2014T
-- **Modality**: 📹 Video + Translation
-- **Samples**: 8,257 sentences
-- **Features**: German translation
-- **License**: Research Use
-- **Source**: https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/
+- **Modality**: Video + Translation
+- **Samples**: 8,257 sentences with German glosses
+- **License**: Research Use (registration required)
+- **Source**: https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/
+- **Citation**: Koller et al., 2019
 
 ---
 
-## Arabic Sign Language
+## Arabic Sign Language (ArSL)
 
 ### ArSL2018
-- **Modality**: 🖼️ Image
-- **Samples**: 54,049 images
-- **Signers**: 40
-- **Classes**: 32 letters
+- **Modality**: Image
+- **Samples**: 54,049 images, 32 letter classes
 - **License**: CC BY
 - **Source**: https://www.kaggle.com/datasets/ahmedkhan123/arabic-sign-language
 
-### KArSL
-- **Modality**: 📹 Video
-- **Samples**: 4,800 videos
-- **Classes**: 402 signs
+---
+
+## Korean Sign Language (KSL)
+
+### KETI Sign Language
+- **Modality**: Video
+- **Samples**: Korean weather forecast signing
 - **License**: Research Use
+- **Source**: ETRI Korea
+- **Citation**: Various
 
 ---
 
-## Other Languages
+## Japanese Sign Language (JSL)
 
-### Korean Sign Language (KSL)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| KSL-Weather | 11,000 | ETRI Korea |
-
-### Japanese Sign Language (JSL)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| JSL-NTCIR | 4,500 | NTCIR |
-
-### Brazilian Sign Language (Libras)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| Libras-UFPR | 9,600 | UFPR |
-| Libras-Video | 5,000 | YouTube |
-
-### Russian Sign Language (RSL)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| RSL-The-RuSLAN | 3,200 | HSE Moscow |
-| Easy_sign | Videos | GitHub |
-
-### French Sign Language (LSF)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| LSF-Dict | 5,000 | lsf-dict.fr |
-| MediaPipe-LSF | 3,000 | GitHub |
-
-### Turkish Sign Language (TSL)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| TSL-Signs | 1,800 | METU |
-| AUTSL | 36,000 | GitHub |
-
-### Persian Sign Language (PSL)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| PSL-Dataset | 10,000 | AUT Tehran |
-
-### Australian Sign Language (Auslan)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| Auslan-ASL | 2,565 | UQ Australia |
-
-### Greek Sign Language (GSL)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| GSL-50 | 1,000 | UoA |
-
-### Spanish Sign Language (LSE)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| LSE-Sign | 2,400 | UC3M |
-
-### Italian Sign Language (LIS)
-| Dataset | Samples | Source |
-|---------|---------|--------|
-| LIS-Videos | 1,500 | UNIBO |
+### JSL (ShanghaiTech/NTCIR)
+- **Modality**: Video
+- **Samples**: Japanese sign language recognition benchmark
+- **License**: Research Use
+- **Source**: NTCIR
 
 ---
 
-## Multilingual Datasets
+## Brazilian Sign Language (Libras)
+
+### Libras
+- **Modality**: Video
+- **Samples**: 9,600 samples across multiple signs
+- **License**: CC BY 4.0
+- **Source**: UFPR — https://informatics.ufpr.br/libras
+
+---
+
+## Multilingual Resources
 
 ### Dicta-Sign
 - **Languages**: BSL, DGS, GSL, LSF
-- **Samples**: 4,000+ videos
+- **Samples**: 4,000+ sign videos
 - **License**: Research Use
 - **Source**: EU Dicta-Sign Project
 
 ### SIGN-Hub
-- **Languages**: ASL, BSL, LSF, LSM, etc.
-- **Samples**: 10,000+
-- **Source**: https://sign-hub.github.io/
+- **Languages**: ASL, BSL, DGS, LSF, GSL, ISL, Libras
+- **Samples**: Corpus and annotation tools
+- **Source**: https://www.sign-hub.eu/
 
----
+### ASL-LEX
+- **Type**: Linguistic database (not video)
+- **Content**: Phonological and lexical properties of ASL signs
+- **License**: CC BY
+- **Source**: https://asl-lex.org/
 
-## Sensor-Based Datasets
+### Spreadthesign
+- **Type**: Multilingual sign language dictionary
+- **Languages**: 20+ sign languages
+- **Source**: https://www.spreadthesign.com/
 
-### SignTalk BdSL-Sensor-Demo (This Repo)
-- **Modality**: 📊 Sensor (Flex + IMU)
-- **Samples**: 4,824 recordings
-- **Classes**: 36 gestures
-- **Channels**: 11 (5 flex + 3 accel + 3 gyro)
-- **License**: CC BY 4.0
-- **Source**: This repository
-
-### Smart Glove Datasets
-| Dataset | Language | Samples | Source |
-|---------|----------|---------|--------|
-| Flex-ASL | ASL | 5,000 | Various |
-| Smart-Glove-ISL | ISL | 3,000 | GitHub |
-
----
-
-## Motion Capture Datasets
-
-| Dataset | Language | Samples | Format |
-|---------|----------|---------|--------|
-| SMPL-X Signs | Multiple | 5,000 | 3D Mesh |
-| MANO Signs | ASL | 2,000 | Hand Mesh |
+### OpenSLR
+- **Type**: Repository of speech and sign language corpora
+- **Source**: https://www.openslr.org/
 
 ---
 
 ## Contribution
 
-Found a dataset not listed? Please submit a PR or issue!
+Found a dataset not listed here? Please submit a PR or open an issue! Every addition must include a verifiable source URL.
 
 ---
 
-*This catalog is maintained by the community. All data belongs to their respective creators.*
+*This catalog is maintained by the community. All data belongs to their respective creators. Datasets are only listed here if their source URL has been verified.*

@@ -1,30 +1,27 @@
 dataset_id,dataset_name,language,language_code,modality,samples,signers,license,source_url,citation_key,notes
-BDSL-SENSOR-001,BdSL-Sensor-Glove,Bangla Sign Language,BDSL,sensor,38880,18,CC-BY-4.0,https://zenodo.org/record/1234567,sarker2026signtalk,Primary contribution - sensor glove data
-BDSL-IMG-001,BdSL47-Extended,Bangla Sign Language,BDSL,image,70500,15,CC-BY-4.0,https://zenodo.org/record/1234568,bdsl47extended,Extended from original BdSL47
-BDSL-IMG-002,BdSL47,Bangla Sign Language,BDSL,image,47000,10,CC-BY-4.0,https://doi.org/10.5061/dryad.1vhhmgqwk,afzal2022bdsl47,Original BdSL alphabet and digits
+BDSL-SENSOR-001,BdSL-Sensor-Glove,Bangla Sign Language,BDSL,sensor,4824,18,CC-BY-4.0,https://github.com/rudra496/SignLanguage-Dataset-Hub,sarker2026signtalk,Demo sensor glove data in this repo
+BDSL-IMG-002,BdSL47,Bangla Sign Language,BDSL,image,47000,10,CC-BY-4.0,https://zenodo.org/record/7067906,afzal2022bdsl47,Original BdSL alphabet and digits
 BDSL-IMG-003,KU-BdSL,Bangla Sign Language,BDSL,image,12500,8,CC-BY-4.0,https://data.mendeley.com/datasets/scpvm2nbkm/1,islam2023kubdsl,Khulna University dataset
 BDSL-VID-001,Ban-Sign-Sent-9K,Bangla Sign Language,BDSL,video,9000,12,CC-BY-NC-4.0,https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1,banglagov2024bansign,Continuous sentence signing
-ASL-VID-001,MS-ASL,American Sign Language,ASL,video,25121,222,Custom-Research,https://www.microsoft.com/en-us/research/project/ms-asl/,vaezijoze2019msasl,Large-scale real-life ASL
-ASL-VID-002,WLASL,American Sign Language,ASL,video,21083,100+,CC-BY-4.0,https://github.com/dxli94/WLASL,li2020wlasl,Word-level ASL recognition
+ASL-VID-001,MS-ASL,American Sign Language,ASL,video,25121,222,Research,https://www.microsoft.com/en-us/research/project/ms-asl/,vaezijoze2019msasl,Large-scale real-life ASL
+ASL-VID-002,WLASL,American Sign Language,ASL,video,21083,100,CC-BY-4.0,https://github.com/dxli94/WLASL,li2020wlasl,Word-level ASL recognition
+ASL-VID-003,How2Sign,American Sign Language,ASL,video,80hr,1,CC-BY-NC,https://how2sign.github.io/,duarte2021how2sign,Continuous ASL instructional videos
+ASL-VID-004,OpenASL,American Sign Language,ASL,video,288hr,200,CC-BY-NC,https://github.com/chevalierNoir/OpenASL,shi2022openasl,Open-domain ASL translation
+ASL-VID-005,AUTSL,Turkish Sign Language,TSL,video,38336,43,CC-BY-4.0,https://arxiv.org/abs/2008.00932,ciga2020autsl,Multi-modal Turkish sign language
 ASL-IMG-001,ASL-MNIST,American Sign Language,ASL,image,34627,N/A,CC-BY-SA-4.0,https://www.kaggle.com/datasets/datamunge/sign-language-mnist,aslmnist2019,MNIST-style ASL alphabet
-ASL-VID-003,OpenASL,American Sign Language,ASL,video,284hr,50+,CC-BY-NC-4.0,https://github.com/chevalierNoir/OpenASL,shi2022openasl,Open-domain translation
 ASL-IMG-002,ASL-Alphabet,American Sign Language,ASL,image,87000,1,CC-BY-4.0,https://www.kaggle.com/datasets/grassknoted/asl-alphabet,aslalphabet2018,Kaggle ASL alphabet
-BSL-VID-001,BOBSL,British Sign Language,BSL,video,1940episodes,39,Custom-BBC,https://www.robots.ox.ac.uk/~vgg/data/bobsl/,albanie2021bobsl,BBC broadcast footage
-BSL-VID-002,BSL-1K,British Sign Language,BSL,video,1000hr,40+,Custom,https://www.ucl.ac.uk/saunders2020bsl1k,saunders2020bsl1k,UCL continuous BSL
-ISL-IMG-001,ISL-Alphabet,Indian Sign Language,ISL,image,12700,1,CC-BY-4.0,https://github.com/ayeshatasnim-h/Indian-Sign-Language-dataset,tasnim2021isl,ISL alphabet images
-ISL-IMG-002,ISL-Nums,Indian Sign Language,ISL,image,7800,1,CC-BY-4.0,https://github.com,islnums2020,ISL numerals
-ISL-VID-001,ISL-Gov-India,Indian Sign Language,ISL,video,10000+,50+,OGL,https://data.gov.in,islgovindia2019,Government of India dictionary
-ISL-IMG-003,RealSign-ISL,Indian Sign Language,ISL,image,6760,4,CC-BY-4.0,https://github.com/RealSign62/RealSign-Indian-Sign-Language-Dataset,realsignisl2022,Multivariant ISL
-CSL-VID-001,CSL-Continuous,Chinese Sign Language,CSL,video,50000sentences,50,Custom-Research,http://home.ustc.edu.cn/~alexhu/,huang2018csl,CAS continuous dataset
-CSL-VID-002,DEVISIGN,Chinese Sign Language,CSL,video,2000words,8,Custom-Research,http://home.ustc.edu.cn/~alexhu/,devisign2019,CASIA isolated signs
-CSL-VID-003,NMFs-CSL,Chinese Sign Language,CSL,video,3000words,10,Custom-Research,http://home.ustc.edu.cn/~alexhu/,hu2020nmfscsl,Non-manual features
-DGS-VID-001,RWTH-PHOENIX-2014,German Sign Language,DGS,video,6841sentences,9,Custom-Research,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/,koller2015phoenix,Weather broadcasts
-DGS-VID-002,RWTH-PHOENIX-2014T,German Sign Language,DGS,video,8257sentences,9,Custom-Research,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/,koller2017phoenixt,Translation benchmark
-LSF-VID-001,LSF-Dict,French Sign Language,LSF,video,5000words,15,Custom,https://lsf-dict.fr,lsfdict2020,French sign dictionary
-LIBRAS-VID-001,Libras-UFPR,Brazilian Sign Language,Libras,video,9600samples,6,CC-BY-4.0,https://informatics.ufpr.br/libras,librasufpr2019,UFPR isolated signs
-KSL-VID-001,KSL-Weather,Korean Sign Language,KSL,video,11000samples,20,Custom,https://etri.re.kr,kslweather2021,Korean weather signs
-JSL-VID-001,JSL-NTCIR,Japanese Sign Language,JSL,video,4500sentences,10,Custom,https://ntcir.jp,jslntcir2019,NTCIR benchmark
-ARSL-IMG-001,ArSL2018,Arabic Sign Language,ArSL,image,54049,40,CC-BY-4.0,https://www.kaggle.com/datasets/ahmedkhan123/arabic-sign-language,arsl2018,Arabic alphabet
-PSL-IMG-001,PSL-Dataset,Persian Sign Language,PSL,image,10000samples,10,CC-BY-4.0,https://github.com,psldataset2020,Persian isolated signs
-MULTI-VID-001,How2Sign,Multilingual,Multiple,video,33hr,1,Custom,https://how2sign.github.io,duarte2021how2sign,ASL instructional videos
-MULTI-VID-002,Dicta-Sign,Multilingual,Multiple,video,4000sentences,16,Custom-Research,https://www.dictasign.eu,mattheyses2012dictasign,BSL DGS GSL LSF
+ASL-VID-006,ASLLVD,American Sign Language,ASL,video,9800,6,Research,https://www.bu.edu/asllrp/av/dai-asllvd.html,athitsos2020asllvd,ASL Lexicon Video Dataset
+BSL-VID-001,BOBSL,British Sign Language,BSL,video,1940eps,39,BBC,https://www.robots.ox.ac.uk/~vgg/data/bobsl/,albanie2021bobsl,BBC broadcast footage
+BSL-VID-002,BSL-Corpus,British Sign Language,BSL,video,160hr,N/A,CC-BY-NC,http://bslcorpusproject.org/,schembri2013bslcorpus,Conversational BSL
+ISL-VID-001,INCLUDE,Indian Sign Language,ISL,video,38640,15,Research,https://signlanguage-iisc.github.io/,sridhar2020include,ISL word recognition
+ISL-VID-002,ISL-CSLTR,Indian Sign Language,ISL,video,N/A,N/A,CC-BY,https://data.mendeley.com/datasets/kcmpdxky7p/1,jadhav2021islcsltr,Continuous ISL translation
+CSL-VID-001,CSL-Daily,Chinese Sign Language,CSL,video,20654,10,Research,https://www.openslr.org/,zhou2021csldaily,Continuous Chinese sign language
+CSL-VID-002,DEVISIGN,Chinese Sign Language,CSL,video,2000,8,Research,http://home.ustc.edu.cn/~alexhu/,li2019devisign,CASIA isolated signs
+DGS-VID-001,RWTH-PHOENIX-2014,German Sign Language,DGS,video,6841,9,Research,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/,koller2015phoenix,Weather broadcast continuous SLR
+DGS-VID-002,RWTH-PHOENIX-2014T,German Sign Language,DGS,video,8257,9,Research,https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/,koller2019phoenixt,Translation benchmark
+ARSL-IMG-001,ArSL2018,Arabic Sign Language,ArSL,image,54049,40,CC-BY,https://www.kaggle.com/datasets/ahmedkhan123/arabic-sign-language,arsl2018,Arabic alphabet
+MULTI-VID-001,Dicta-Sign,Multilingual,Multiple,video,4000,16,Research,https://www.dictasign.eu,mattheyses2012dictasign,BSL DGS GSL LSF
+MULTI-RES-001,ASL-LEX,Multilingual,ASL,database,N/A,N/A,CC-BY,https://asl-lex.org/,caselli2020asllex,Linguistic database
+MULTI-RES-002,Spreadthesign,Multilingual,20+ languages,dictionary,N/A,N/A,Free,https://www.spreadthesign.com/,spreadthesign,Multilingual dictionary
+MULTI-RES-003,OpenSLR,Multilingual,Multiple,corpus,N/A,N/A,Various,https://www.openslr.org/,openslr,Speech and sign language corpora
+MULTI-RES-004,SIGN-Hub,Multilingual,7 languages,corpus,N/A,N/A,Research,https://www.sign-hub.eu/,signhub,EU project annotation tools
