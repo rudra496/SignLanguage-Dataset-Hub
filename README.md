@@ -333,29 +333,25 @@ This hub would not be possible without the researchers and organizations who cre
 ## 📞 Contact
 
 - **Maintainer:** Rudra Sarker
-- **GitHub:** [@rudra496](https://github.com/rudra496)
-- **Twitter/X:** [@rudra496](https://twitter.com/rudra496)
 - **Institution:** Shahjalal University of Science and Technology
 
 ---
 
-<p align="center">
-  <b>Making sign language technology accessible to everyone.</b>
-  <br/>
-  <sub>Built with ❤️ for the deaf community and developers worldwide</sub>
-  <br/><br/>
-  <a href="https://github.com/rudra496"><img src="https://img.shields.io/badge/GitHub-rudra496-181717?style=flat&logo=github" alt="GitHub"/></a>
-  <a href="https://twitter.com/rudra496"><img src="https://img.shields.io/badge/Twitter-@rudra496-1DA1F2?style=flat&logo=twitter&logoColor=white" alt="Twitter"/></a>
-</p>
-
 ## 🌐 Connect
 
-- [![GitHub](https://img.shields.io/badge/GitHub-rudra496-181717?logo=github)](https://github.com/rudra496)
-- [![Twitter](https://img.shields.io/badge/X-@rudra496-1DA1F2?logo=x)](https://x.com/rudra496)
+<p align="center">
+  <a href="https://github.com/rudra496"><img src="https://img.shields.io/badge/GitHub-rudra496-181717?style=flat&logo=github" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/rudrasarker"><img src="https://img.shields.io/badge/LinkedIn-Rudra_Sarker-0A66C2?style=flat&logo=linkedin" alt="LinkedIn"/></a>
+  <a href="https://x.com/Rudra496"><img src="https://img.shields.io/badge/X-@Rudra496-000000?style=flat&logo=x" alt="X"/></a>
+  <a href="https://www.facebook.com/rudrasarker130"><img src="https://img.shields.io/badge/Facebook-Rudra_Sarker-1877F2?style=flat&logo=facebook" alt="Facebook"/></a>
+  <a href="https://youtube.com/@rudrasarker9732"><img src="https://img.shields.io/badge/YouTube-@rudrasarker9732-FF0000?style=flat&logo=youtube" alt="YouTube"/></a>
+  <a href="https://dev.to/rudra_sarker"><img src="https://img.shields.io/badge/Dev.to-rudra__sarker-0A0A0A?style=flat&logo=devdotto" alt="Dev.to"/></a>
+  <a href="https://www.researchgate.net/profile/Rudra-Sarker-3"><img src="https://img.shields.io/badge/ResearchGate-Rudra_Sarker-00CCBB?style=flat&logo=researchgate" alt="ResearchGate"/></a>
+</p>
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by <a href="https://github.com/rudra496">rudra496</a></strong><br>
-  <sub>MIT License · Free & Open Source Forever</sub>
+  <strong>Built with ❤️ by <a href="https://github.com/rudra496">Rudra Sarker</a></strong><br>
+  <sub>CC BY 4.0 License · Free & Open Source Forever</sub>
 </p>
