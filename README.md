@@ -1,10 +1,17 @@
+<!--
+Meta Description: Curated catalog of 73+ publicly available sign language datasets covering 26 sign languages. Find datasets for ASL, BSL, ISL, and more for research and development.
+Keywords: sign language dataset, ASL, gesture recognition, deaf community, SLR, sign language recognition
+-->
+
 # 🌍 Sign Language Dataset Hub
 
+[![73 Datasets](https://img.shields.io/badge/Datasets-73%2B-blue.svg)](https://rudra496.github.io/SignLanguage-Dataset-Hub/)
+[![26 Sign Languages](https://img.shields.io/badge/Languages-26-green.svg)]
+[![100% Verified](https://img.shields.io/badge/Links-100%25_Verified-brightgreen.svg)]
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]
-[![Verified Links](https://img.shields.io/badge/Links-Verified-brightgreen.svg)]
 
-> **A curated, verified collection of sign language datasets, tools, and resources — free and open for everyone.**
+> **A curated, verified catalog of 73+ sign language datasets covering 26 sign languages — the most comprehensive open collection for sign language recognition (SLR) research, gesture recognition, deaf community technology, and assistive AI development.**
 
 ---
 
@@ -25,8 +32,8 @@ To democratize access to sign language technology by providing:
 
 | Metric | Count |
 |--------|-------|
-| **Verified Datasets** | 67 |
-| **Sign Languages** | 22 |
+| **Verified Datasets** | 73 |
+| **Sign Languages** | 26 |
 | **Modalities** | Video, Image, Sensor, Pose, RGB-D, Skeleton, Text |
 | **Source Verification** | 100% (all URLs checked) |
 
@@ -250,11 +257,44 @@ If you use this repository, please cite:
 
 We welcome contributions! See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
 
+---
+
+## 🤔 Why This Repo?
+
+| Feature | This Repo | Typical SLR Papers/GitHub Lists | Kaggle Collections |
+|---------|-----------|--------------------------------|-------------------|
+| **Datasets** | 73+ curated | 5–20 mentioned inline | 10–30, unverified |
+| **Sign Languages** | 26 | 1–5 | 3–10 |
+| **URL Verification** | ✅ All checked | ❌ Often broken links | ❌ Mixed |
+| **Sample Counts** | From original sources | Inconsistent | User-reported |
+| **License Info** | ✅ Per dataset | Rarely included | Rarely included |
+| **Modality Tags** | ✅ All datasets | Partial | Tags vary |
+| **Tools & Scripts** | ✅ Included | ❌ | ❌ |
+| **Demo Datasets** | ✅ Included | ❌ | ❌ |
+| **Open Source** | CC BY 4.0 | Varies | Varies |
+| **Actively Maintained** | ✅ | Usually one-time | Community |
+
 **Rules:**
 1. Every dataset must have a **verifiable source URL**
 2. Sample counts must come from the **original source**
 3. Include license and citation information
 4. No placeholder or fabricated data — ever
+
+---
+
+## 📖 Citation
+
+If you use this dataset catalog in your research, please cite:
+
+```bibtex
+@misc{signlanguage_dataset_hub,
+  title   = {Sign Language Dataset Hub: A Curated Catalog of 73+ Verified Datasets for 26 Sign Languages},
+  author  = {Sarker, Rudra},
+  year    = {2025},
+  url     = {https://github.com/rudra496/SignLanguage-Dataset-Hub},
+  note    = {Version 1.0}
+}
+```
 
 ---
 
@@ -294,6 +334,7 @@ This hub would not be possible without the researchers and organizations who cre
 
 - **Maintainer:** Rudra Sarker
 - **GitHub:** [@rudra496](https://github.com/rudra496)
+- **Twitter/X:** [@rudra496](https://twitter.com/rudra496)
 - **Institution:** Shahjalal University of Science and Technology
 
 ---
@@ -302,4 +343,19 @@ This hub would not be possible without the researchers and organizations who cre
   <b>Making sign language technology accessible to everyone.</b>
   <br/>
   <sub>Built with ❤️ for the deaf community and developers worldwide</sub>
+  <br/><br/>
+  <a href="https://github.com/rudra496"><img src="https://img.shields.io/badge/GitHub-rudra496-181717?style=flat&logo=github" alt="GitHub"/></a>
+  <a href="https://twitter.com/rudra496"><img src="https://img.shields.io/badge/Twitter-@rudra496-1DA1F2?style=flat&logo=twitter&logoColor=white" alt="Twitter"/></a>
+</p>
+
+## 🌐 Connect
+
+- [![GitHub](https://img.shields.io/badge/GitHub-rudra496-181717?logo=github)](https://github.com/rudra496)
+- [![Twitter](https://img.shields.io/badge/X-@rudra496-1DA1F2?logo=x)](https://x.com/rudra496)
+
+---
+
+<p align="center">
+  <strong>Built with ❤️ by <a href="https://github.com/rudra496">rudra496</a></strong><br>
+  <sub>MIT License · Free & Open Source Forever</sub>
 </p>
