@@ -88,7 +88,7 @@ Documentation improvements are always welcome:
 ```bash
 # Fork the repository on GitHub
 # Then clone your fork
-git clone https://github.com/YOUR_USERNAME/SignLanguage-Dataset-Hub.git
+git clone https://github.com/rudra496/SignLanguage-Dataset-Hub.git
 cd SignLanguage-Dataset-Hub
 
 # Add upstream remote
