@@ -11,7 +11,7 @@ Keywords: sign language dataset, ASL, gesture recognition, deaf community, SLR, 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]
 
-> **A curated, verified catalog of 73+ sign language datasets covering 26 sign languages — the most comprehensive open collection for sign language recognition (SLR) research, gesture recognition, deaf community technology, and assistive AI development.**
+> **A curated, verified catalog of 73+ sign language datasets covering 26 sign languages — an open collection for sign language recognition (SLR) research, gesture recognition, deaf community technology, and assistive AI development.**
 
 ---
 
