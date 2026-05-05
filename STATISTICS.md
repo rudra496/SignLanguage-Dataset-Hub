@@ -1,6 +1,6 @@
 # Sign Language Dataset Hub — Statistics
 
-**Last Updated:** March 2026
+**Last Updated:** May 2026
 
 ---
 
@@ -8,8 +8,8 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Verified Datasets** | 67 |
-| **Sign Languages Covered** | 22 |
+| **Total Verified Datasets** | 77 |
+| **Sign Languages Covered** | 26 |
 | **Countries/Regions** | 22+ |
 | **Demo Samples in Repo** | 4,824 |
 | **Tools & Scripts** | 4 |
@@ -21,28 +21,30 @@
 
 | Language | Code | Count | Key Datasets |
 |----------|------|-------|-------------|
-| American Sign Language | ASL | 11 | MS-ASL, WLASL, How2Sign, OpenASL, ASLLVD, AUTSL, ASL-MNIST, ASL Alphabet, ChaLearn LAP, ASL-LEX, ASL Citizen |
+| American Sign Language | ASL | 12 | MS-ASL, WLASL, How2Sign, OpenASL, ASLLVD, AUTSL, ASL-MNIST, ASL Alphabet, ChaLearn LAP, ASL-LEX, ASL Citizen, ASL Fingerspelling |
 | Arabic Sign Language | ArSL | 2 | ArSL2018, KArSL |
 | Australian Sign Language | Auslan | 1 | Auslan Signbank |
 | Bangla Sign Language | BdSL | 4 | BdSL47, KU-BdSL, Ban-Sign-Sent-9K, BdSL-Sensor-Glove |
 | Brazilian Sign Language | Libras | 2 | Libras-UFPR, PHOENIX-Libras |
-| British Sign Language | BSL | 3 | BOBSL, BSL Corpus, BSL SignBank |
-| Chinese Sign Language | CSL | 2 | DEVISIGN, USTC-CSL |
+| British Sign Language | BSL | 4 | BOBSL, BSL Corpus, BSL SignBank, Bristol BSL |
+| Chinese Sign Language | CSL | 3 | DEVISIGN, USTC-CSL, CCTV-CSL |
 | Dutch Sign Language | NGT | 1 | CNGT Corpus |
 | French Sign Language | LSF | 2 | Dicta-Sign LSF, LSF-Dict |
-| German Sign Language | DGS | 3 | RWTH-PHOENIX-2014, PHOENIX-2014T, DGS Corpus |
+| German Sign Language | DGS | 4 | RWTH-PHOENIX-2014, PHOENIX-2014T, DGS Corpus, Meine DGS |
 | Greek Sign Language | GSL | 1 | GSL-50 |
-| Indian Sign Language | ISL | 3 | INCLUDE, ISL-CSLTR, ISL-Alphabet |
+| Indian Sign Language | ISL | 4 | INCLUDE, ISL-CSLTR, ISL-Alphabet, SignBD |
 | Irish Sign Language | ISL | 1 | ISL Corpus |
 | Italian Sign Language | LIS | 1 | ATIS |
-| Japanese Sign Language | JSL | 1 | J-ASL |
+| Japanese Sign Language | JSL | 2 | J-ASL, Shinra JSL |
 | Korean Sign Language | KSL | 1 | KETI |
 | Malaysian Sign Language | BIM | 1 | MSL Dataset |
 | Mexican Sign Language | LSM | 1 | LSM Sign Language |
 | Russian Sign Language | RSL | 2 | RuSLAN, RSL-Signs |
 | Swedish Sign Language | SSL | 1 | SSL Corpus |
 | Thai Sign Language | TSL | 1 | TSL-51 |
-| Turkish Sign Language | TİD | 1 | AUTSL |
+| Turkish Sign Language | TİD | 2 | AUTSL, BosphorusSign22k |
+| Argentine Sign Language | LSA | 1 | LSA-SAN (LSA64) |
+| Flemish Sign Language | VGT | 1 | VGT Corpus |
 | Multilingual | — | 5 | SIGN-Hub, Dicta-Sign, SpreadTheSign, OpenSLR, SLP Toolkit |
 | Linguistic DBs | — | 6 | ASL-LEX, BSL SignBank, Auslan Signbank, etc. |
 
