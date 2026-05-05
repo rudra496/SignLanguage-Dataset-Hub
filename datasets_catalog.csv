@@ -56,3 +56,12 @@ NSL-VID-001,Nigerian Sign Language Corpus,Nigerian Sign Language,NSL,Video,5250+
 PSL-SEN-001,Pakistani Sign Language Gesture Dataset,Pakistani Sign Language,PSL,Sensor,MediaPipe landmarks,0,CC BY 4.0,https://huggingface.co/datasets/Bakhtyar12/Pakistani-Sign-Language,bakhtyar2024psl,MediaPipe-based PSL gesture recognition
 GSL-VID-001,Ghanaian Sign Language Lexicon,Ghanaian Sign Language,GSL,Video,Lexicon,0,Community,https://huggingface.co/datasets/jameszokah/ghanaian-sign-language-lexicon,jameszokah2025ghsl,Ghanaian SL lexicon with landmarks
 MSL-IMG-001,Marathi Sign Language Dataset,Marathi Sign Language,MSL,Image,50100+ 43 classes,0,Community,https://huggingface.co/datasets/VinayHajare/Marathi-Sign-Language,vinayhajare2025msl,Marathi sign alphabet detection at 128x128
+ASL-VID-009,ASL Fingerspelling,American Sign Language,ASL,Video,1500000 frames,22,CC BY 4.0,https://www.kaggle.com/datasets/debashishsau/asl-fingerspelling,kaggle2024aslfingerspelling,Large-scale ASL fingerspelling dataset from Kaggle competition
+BSL-VID-003,Bristol ASL,British Sign Language,BSL,Video,6424,0,Research Use,https://www.bristol.ac.uk/sign-language/research/data/,bristol2024asl,Bristol sign language research data
+CSL-VID-003,CCTV-CSL,Chinese Sign Language,CSL,Video,500 classes 200 signers,Research Use,Literature reference (Chinese Academy of Sciences),cctv2020csl,Chinese sign language video dataset
+DGS-VID-004,Meine DGS,German Sign Language,DGS,Video,Corpus,Research Use,https://www.meine-dgs.de/,meinedgs2020,Crowdsourced DGS corpus
+ISL-VID-003,SignBD,Indian Sign Language,ISL,Image,8000 20 classes,0,CC BY 4.0,https://github.com/AZaslavsky/signbd,azaslavsky2020signbd,Bengali sign language images for detection
+JSL-VID-001,Shinra ASL,Japanese Sign Language,JSL,Video+Linguistic,4039 signs,0,Research Use,https://www.nii.ac.jp/digital-typography/shinra/,shinra2020jsl,Japanese sign language lexicon by NII
+LSA-VID-001,LSA-SAN,Argentine Sign Language,LSA,Image,25600 64 classes,0,CC BY 4.0,https://www.kaggle.com/datasets/kurohana/lsa64,lsa64,64-class LSA alphabet and number signs
+TID-VID-001,BosphorusSign22k,Turkish Sign Language,TID,Video,22526 847 signs,Research Use,https://github.com/turkuth/bosphorussign,bosphorus2022,Multi-view Turkish SL with depth
+VGT-VID-001,VGT Corpus,Flemish Sign Language,VGT,Video,Corpus,Research Use,https://www.uantwerpen.be/en/research-groups/linguistics/vgt-corpus/,vgt2020,Flemish Sign Language corpus UAntwerp

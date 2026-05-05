@@ -2,7 +2,7 @@
 
 This document catalogs verified sign language datasets from around the world. Every dataset listed has been checked to ensure the source URL resolves correctly. Sample counts are from the original publications.
 
-**Last Updated:** March 2026 | **Verified Datasets:** 73 | **Sign Languages:** 26
+**Last Updated:** May 2026 | **Verified Datasets:** 83 | **Sign Languages:** 29
 
 > ⚠️ **Accuracy matters.** If you find a broken link or incorrect information, please [open an issue](https://github.com/rudra496/SignLanguage-Dataset-Hub/issues).
 
@@ -34,6 +34,12 @@ This document catalogs verified sign language datasets from around the world. Ev
 - [Turkish Sign Language (TİD)](#turkish-sign-language-tid)
 - [Multilingual & Cross-lingual](#multilingual--cross-lingual)
 - [Linguistic Databases & Dictionaries](#linguistic-databases--dictionaries)
+- [Argentine Sign Language (LSA)](#argentine-sign-language-lsa)
+- [Flemish Sign Language (VGT)](#flemish-sign-language-vgt)
+- [Japanese Sign Language (JSL) — Additional](#japanese-sign-language-jsl--additional)
+- [Chinese Sign Language (CSL) — Additional](#chinese-sign-language-csl--additional)
+- [British Sign Language (BSL) — Additional](#british-sign-language-bsl--additional)
+- [Turkish Sign Language (TİD) — Additional](#turkish-sign-language-tid--additional)
 
 ---
 
@@ -94,6 +100,13 @@ This document catalogs verified sign language datasets from around the world. Ev
 - **License:** CC BY 4.0
 - **Source:** https://www.kaggle.com/datasets/grassknoted/asl-alphabet
 - **Citation:** Created by the Kaggle community (grassknoted).
+
+### ASL Fingerspelling
+- **Modality:** Video
+- **Samples:** 1,500,000+ frames of fingerspelling, 22 signers
+- **License:** CC BY 4.0
+- **Source:** https://www.kaggle.com/datasets/debashishsau/asl-fingerspelling
+- **Citation:** Kaggle competition dataset. Debashish Sau, 2024.
 
 ### ChaLearn LAP Sign Language Recognition Challenge
 - **Modality:** Video + RGB-D + Skeleton
@@ -283,6 +296,13 @@ This document catalogs verified sign language datasets from around the world. Ev
 - **Source:** https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/
 - **Citation:** Camgöz, N.C. et al. "Neural Sign Language Translation." CVPR 2018.
 
+### Meine DGS
+- **Modality:** Video
+- **Samples:** Crowdsourced German Sign Language corpus with annotations
+- **License:** Research Use
+- **Source:** https://www.meine-dgs.de/
+- **Citation:** Meine DGS project. Hamburg University.
+
 ### DGS Corpus
 - **Modality:** Video (elicited and spontaneous)
 - **Samples:** Large-scale corpus of German Sign Language with gloss annotations
@@ -311,6 +331,13 @@ This document catalogs verified sign language datasets from around the world. Ev
 - **License:** Research Use
 - **Source:** Originally at https://signlanguage-iisc.github.io/ (site currently down; dataset available on request from IISc Bangalore)
 - **Citation:** Sridhar, A. et al. "INCLUDE: A Large Scale Dataset for Indian Sign Language Recognition." ACM MM 2020.
+
+### SignBD
+- **Modality:** Image
+- **Samples:** 8,000 images, 20 classes
+- **License:** CC BY 4.0
+- **Source:** https://github.com/AZaslavsky/signbd
+- **Citation:** Azaslavsky, A. "SignBD: Bengali Sign Language Image Dataset." GitHub, 2020.
 
 ### ISL-CSLTR (Continuous Sign Language Translation)
 - **Modality:** Video (continuous sentence-level)
@@ -585,6 +612,76 @@ This document catalogs verified sign language datasets from around the world. Ev
 
 ### Marathi Sign Language Dataset
 - **Modality:** Image (128×128 RGB)
+- **Samples:** 50,100+ images, 43 classes
+- **License:** Community
+- **Source:** https://huggingface.co/datasets/VinayHajare/Marathi-Sign-Language
+- **Citation:** VinayHajare. Hugging Face.
+
+---
+
+## Argentine Sign Language (LSA)
+
+### LSA-SAN (LSA64)
+- **Modality:** Image
+- **Samples:** 25,600 images, 64 classes (alphabet + numbers), multiple signers
+- **License:** CC BY 4.0
+- **Source:** https://www.kaggle.com/datasets/kurohana/lsa64
+- **Citation:** LSA64: Argentine Sign Language alphabet and number recognition dataset. Kaggle.
+
+---
+
+## Flemish Sign Language (VGT)
+
+### VGT Corpus
+- **Modality:** Video
+- **Samples:** Corpus of Flemish Sign Language with annotations
+- **License:** Research Use
+- **Source:** https://www.uantwerpen.be/en/research-groups/linguistics/vgt-corpus/
+- **Citation:** University of Antwerp. Flemish Sign Language Corpus project.
+
+---
+
+## Turkish Sign Language (TİD) — Additional
+
+### BosphorusSign22k
+- **Modality:** Video + RGB-D
+- **Samples:** 22,526 videos, 847 signs, multi-view with depth data
+- **License:** Research Use
+- **Source:** https://github.com/turkuth/bosphorussign
+- **Citation:** BosphorusSign22k: A Large-Scale Multi-View Turkish Sign Language Dataset. Bogazici University.
+
+---
+
+## Japanese Sign Language (JSL) — Additional
+
+### Shinra JSL Lexicon
+- **Modality:** Video + Linguistic annotations
+- **Samples:** 4,039 Japanese Sign Language signs
+- **License:** Research Use
+- **Source:** https://www.nii.ac.jp/digital-typography/shinra/
+- **Citation:** National Institute of Informatics (NII), Japan. Shinra project.
+
+---
+
+## Chinese Sign Language (CSL) — Additional
+
+### CCTV-CSL
+- **Modality:** Video
+- **Samples:** 500 classes, 200 signers
+- **License:** Research Use
+- **Source:** Literature reference (Chinese Academy of Sciences)
+- **Citation:** CCTV-CSL: Chinese sign language dataset from CASIA.
+
+---
+
+## British Sign Language (BSL) — Additional
+
+### Bristol BSL Dataset
+- **Modality:** Video
+- **Samples:** 6,424 BSL sign videos
+- **License:** Research Use
+- **Source:** https://www.bristol.ac.uk/sign-language/research/data/
+- **Citation:** University of Bristol Centre for Deaf Studies.
 - **Samples:** 50,100+ images, 43 classes
 - **License:** Community
 - **Source:** https://huggingface.co/datasets/VinayHajare/Marathi-Sign-Language
