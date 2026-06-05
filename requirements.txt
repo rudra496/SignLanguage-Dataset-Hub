@@ -21,7 +21,7 @@ Pillow>=10.0.0
 mediapipe>=0.10.0
 
 # Data formats
-h5py>=3.9.0
+h5py>=3.16.0
 pyarrow>=13.0.0
 jsonlines>=4.0.0
 
