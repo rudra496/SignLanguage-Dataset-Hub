@@ -1,0 +1,25 @@
+data:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "data/**"
+          - "*.csv"
+
+scripts:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "scripts/**"
+          - "tools/**"
+
+notebooks:
+  - changed-files:
+      - any-glob-to-any-file: "notebooks/**"
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "docs/**"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ".github/workflows/**"
