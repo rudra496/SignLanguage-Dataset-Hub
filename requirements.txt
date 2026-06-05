@@ -27,7 +27,7 @@ jsonlines>=4.0.0
 
 # Visualization
 matplotlib>=3.7.0
-seaborn>=0.12.0
+seaborn>=0.13.2
 tqdm>=4.66.0
 
 # Web and API
