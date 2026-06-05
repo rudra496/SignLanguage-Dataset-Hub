@@ -16,7 +16,7 @@ torchvision>=0.15.0
 # transformers>=4.30.0
 
 # Computer Vision
-opencv-python>=4.8.0
+opencv-python>=4.13.0.92
 Pillow>=10.0.0
 mediapipe>=0.10.0
 
