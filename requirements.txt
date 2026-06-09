@@ -41,7 +41,7 @@ python-dotenv>=1.0.0
 
 # Dataset-specific
 sign-language-datasets>=0.4.0
-datasets>=2.14.0  # Hugging Face datasets
+datasets>=5.0.0  # Hugging Face datasets
 
 # Development (optional)
 pytest>=7.4.0
