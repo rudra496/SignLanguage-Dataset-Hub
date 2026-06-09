@@ -17,7 +17,7 @@ torchvision>=0.15.0
 
 # Computer Vision
 opencv-python>=4.13.0.92
-Pillow>=10.0.0
+Pillow>=12.2.0
 mediapipe>=0.10.0
 
 # Data formats
