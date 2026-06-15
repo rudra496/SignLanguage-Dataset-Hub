@@ -2,7 +2,7 @@ name: Welcome New Contributors
 
 on:
   pull_request_target:
-    types: [opened]
+    types: [opened, reopened]
   issues:
     types: [opened]
 
@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/first-interaction@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: >
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_message: >
             Welcome to SignLanguage Dataset Hub! Thanks for opening this issue.
-          pr-message: >
+          pr_message: >
             Welcome to SignLanguage Dataset Hub! Thanks for your first pull request!

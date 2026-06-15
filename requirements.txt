@@ -17,7 +17,7 @@ torchvision>=0.15.0
 
 # Computer Vision
 opencv-python>=4.13.0.92
-Pillow>=10.0.0
+Pillow>=12.2.0
 mediapipe>=0.10.0
 
 # Data formats
@@ -41,12 +41,12 @@ python-dotenv>=1.0.0
 
 # Dataset-specific
 sign-language-datasets>=0.4.0
-datasets>=2.14.0  # Hugging Face datasets
+datasets>=5.0.0  # Hugging Face datasets
 
 # Development (optional)
 pytest>=7.4.0
 black>=23.0.0
-flake8>=6.1.0
+flake8>=7.3.0
 mypy>=1.5.0
 
 # Jupyter (optional)
